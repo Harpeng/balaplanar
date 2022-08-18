@@ -1,0 +1,7 @@
+.button__header {
+	margin: 34px 20px 34px 0;
+}
+
+.button__header:hover {
+	background-color: #333333;
+}

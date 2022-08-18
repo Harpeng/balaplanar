@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Балапанлар</title>
-</head>
-<body>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Балапанлар</title>
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="header__logo">
+			</div>
+			<nav>
+				<ul class="header__links">
+					<li>
+						<a class="header__link" href="#">Наши курсы</a>
+					</li>
+
+					<li>
+						<a class="header__link" href="#">О нас</a>
+					</li>
+
+					<li>
+						<a class="header__link" href="#">Команда</a>
+					</li>
+
+					<li>
+						<a class="header__link" href="#">Как нас найти</a>
+					</li>
+
+					<li>
+						<a class="header__link" href="#">Поддержать проект</a>
+					</li>
+				</ul>
+			</nav>
+
+			<button
+				type="button"
+				aria-label="кнопка Записаться на курсы"
+				class="button button__header"
+			>
+				Записаться на курсы
+			</button>
+		</header>
+
+		<main class="content">
+			<section class="lead page__lead">
+				<div class="lead__image">
+					<div class="lead__block-button">
+					<h1 class="lead__title">Досуг и курсы для детей в аулах и сёлах</h1>
+
+					<button
+						type="button"
+						aria-label="кнопка Записаться на курсы"
+						class="button button_lead"
+					>
+						Записаться на курсы
+					</button>
+				</div>
+					<div class="lead__telegram">
+						<div class="lead__telegram-text-block">
+							<img
+								class="lead__telegram-logo"
+								src="<%=require('../images/logo_telegram.png')%>"
+								alt="логотип телеграмм"
+							/>
+							<p class="lead__caption">
+								Следите за последними анонсами и событиями “Уя” в нашем Telegram
+								канале
+							</p>
+						</div>
+						<button
+							type="button"
+							aria-label="кнопка Подписаться на телеграмм"
+							class="button button_telegram"
+						>
+							Подписаться
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="intro">
+				<p class="intro__text">
+					Каждый ребёнок талантлив по-своему. Наша цель — дать детям возможность
+					раскрыть свои таланты, получить хорошие современные знания в ауле,
+					и стать успешным и счастливым взрослым.
+				</p>
+			</section>
+		</main>
+	</body>
 </html>
