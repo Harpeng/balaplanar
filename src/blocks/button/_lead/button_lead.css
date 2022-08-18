@@ -11,8 +11,18 @@
 	background-color: #ff7628;
 	border-radius: 50px;
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .button_lead:hover {
 	background-color: #ff8540;
+}
+
+@media screen and (max-width: 320px) {
+	.button__header {
+		width: 224px;
+		height: 52px;
+		font-size: 16px;
+		line-height: 1.25;
+	}
 }

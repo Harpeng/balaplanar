@@ -1,7 +1,13 @@
-.lead__block-button{
+.lead__block-button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	gap: 80px;
+}
+
+@media screen and (max-width: 320px) {
+	.lead__block-button {
+		gap: 30px;
+	}
 }

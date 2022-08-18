@@ -1,0 +1,16 @@
+.header__menu {
+	display: none;
+}
+
+@media screen and (max-width: 320px) {
+	.header__menu {
+		display: block;
+		width: 30px;
+		height: 30px;
+		margin: 6px 15px 6px 0;
+		background-color: #ffffff;
+		background-image: url(../../../../images/menu.png);
+		background-repeat: no-repeat;
+		border: none;
+	}
+}
