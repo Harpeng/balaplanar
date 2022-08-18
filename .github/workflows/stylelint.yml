@@ -2,10 +2,9 @@ name: Stylelint
 
 on:
   pull_request:
-    branches: [ master, main, develop ]
+    branches: [ main, develop ]
   push:
-    branches:
-      - main
+    branches: [ main, develop ]
 
 jobs:
   lint:
