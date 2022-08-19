@@ -1,6 +1,8 @@
 .header__logo {
+	flex-basis: 224px;
 	width: 101px;
 	height: 100px;
-	margin: 10px 0 10px 10px;
+	margin: 10px 0 10px 20px;
 	background-image: url(../../../../images/Лого_Балапанлар.svg);
+	background-repeat: no-repeat;
 }
