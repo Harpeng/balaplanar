@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 320px) {
-	.button__header {
+	.button_lead {
 		width: 224px;
 		height: 52px;
 		font-size: 16px;
