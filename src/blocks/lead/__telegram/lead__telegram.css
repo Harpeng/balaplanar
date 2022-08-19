@@ -1,0 +1,13 @@
+.lead__telegram{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	height: 72px;
+	margin: 0 0 10px 0;
+	background-color: #ae46ff;
+	border-radius: 60px;
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
