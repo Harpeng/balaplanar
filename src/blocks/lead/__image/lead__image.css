@@ -10,14 +10,14 @@
 		rgba(0, 0, 0, 0.4) 0%,
 		rgba(0, 0, 0, 0) 100%
 	),
-		url(../../../../images/lead_image.svg);
+		url(../../../images/lead_image.svg);
 	border-radius: 60px;
 }
 
 
 @media screen and (max-width: 320px) {
 	.lead__image {
-		background: url(../../../../images/lead_image-mobile.svg);
+		background: url(../../../images/lead_image-mobile.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 30px;
