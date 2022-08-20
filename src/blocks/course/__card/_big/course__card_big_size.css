@@ -1,0 +1,9 @@
+.course__card_big_size {
+	max-width: 595px;
+	max-height: 553px;
+	margin-bottom: 10px;
+}
+
+.course__card_big_size:first-of-type {
+	margin-right: 10px;
+}

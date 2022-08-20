@@ -1,0 +1,9 @@
+.course__subtitle {
+	margin: 0 auto;
+	padding: 50px 0 10px;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1.22;
+	letter-spacing: -1px;
+	text-align: center;
+}
