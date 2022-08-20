@@ -1,0 +1,13 @@
+.button__scroll-header{
+	margin: 14px 20px 14px 0;
+}
+
+.button__scroll-header {
+	background-color: #333333;
+}
+
+@media screen and (max-width: 320px) {
+	.button__scroll-header {
+		display: none;
+	}
+}
