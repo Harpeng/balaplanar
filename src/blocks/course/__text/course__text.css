@@ -1,0 +1,9 @@
+.course__text {
+	max-width: 804px;
+	margin: 0 auto;
+	padding: 0 0 40px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.22;
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+.course__button {
+	padding: 20px 28px;
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	background-color: black;
+	border-radius: 50px;
+}
+
+
+.course__button:hover {
+	background-color: #333333;
+	cursor: pointer;
+	transition: 0.3s linear;
+}

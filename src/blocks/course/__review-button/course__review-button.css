@@ -1,0 +1,15 @@
+.course__review-button {
+	color: black;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	text-align: center;
+	background-color: white;
+	border: none;
+}
+
+.course__review-button:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	transition: 0.3s linear;
+}

@@ -1,0 +1,9 @@
+.course__price-block {
+	display: flex;
+	box-sizing: border-box;
+	max-width: 1220px;
+	margin: 0 auto;
+	margin: 0 0 120px;
+	background-color: #d0ddff;
+	border-radius: 60px;
+}
