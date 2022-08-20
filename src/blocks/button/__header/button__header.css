@@ -5,3 +5,10 @@
 .button__header:hover {
 	background-color: #333333;
 }
+
+
+@media screen and (max-width: 320px) {
+	.button__header {
+		display: none;
+	}
+}

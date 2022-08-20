@@ -7,3 +7,9 @@
 	text-align: center;
 	list-style-type: none;
 }
+
+@media screen and (max-width: 320px) {
+	.header__links {
+		display: none;
+	}
+}

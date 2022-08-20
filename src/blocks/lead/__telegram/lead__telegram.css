@@ -1,4 +1,4 @@
-.lead__telegram{
+.lead__telegram {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -10,4 +10,10 @@
 	background-color: #ae46ff;
 	border-radius: 60px;
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 320px) {
+	.lead__telegram {
+		display: none;
+	}
 }

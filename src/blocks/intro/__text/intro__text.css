@@ -9,3 +9,13 @@
 	letter-spacing: -1px;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
+
+@media screen and (max-width: 320px) {
+	.intro__text {
+		max-width: 290px;
+		margin: 40px 15px 40px 15px;
+		font-size: 24px;
+		line-height: 1.2;
+		letter-spacing: -0.5px;
+	}
+}
