@@ -2,20 +2,19 @@
 	width: 395px;
 	height: 104px;
 	padding: 0 0 0 0;
-	font-weight: 600;
 	font-size: 28px;
 	font-style: normal;
 	line-height: 1.21;
 	letter-spacing: -0.5px;
-	text-align: center;
 	background-color: #ff7628;
-	border-radius: 50px;
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .button_lead:hover {
 	background-color: #ff8540;
+	cursor: pointer;
+	transition: 0.3s linear;
 }
 
 @media screen and (max-width: 320px) {
