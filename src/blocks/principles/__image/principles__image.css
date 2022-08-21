@@ -1,0 +1,17 @@
+.principles__image {
+    margin: 0 auto;
+    padding: 0%;
+    max-height: 420px;
+    z-index: 3;
+}
+
+/* .principles__element:first-of-type>img {
+    margin-top: 80px;
+} */
+
+
+@media screen and (max-width: 320px) {
+    .principles__image {
+        max-height: 230px;
+    }
+}
