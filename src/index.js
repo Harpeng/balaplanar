@@ -13,10 +13,10 @@ let last_known_scroll_position = 0;
 function addScrollListener() {
 	window.addEventListener('scroll', function (e) {
 		if (last_known_scroll_position == 0 && window.scrollY !== 0) {
-			headerStart.style.display = 'none';
+			//headerStart.style.display = 'none';
 			headerScroll.style.display = 'flex';
 		} if (last_known_scroll_position !== 0 && window.scrollY == 0) {
-			headerStart.style.display = 'flex';
+			//headerStart.style.display = 'flex';
 			headerScroll.style.display = 'none';
 		}
 		last_known_scroll_position = window.scrollY;
@@ -25,15 +25,13 @@ function addScrollListener() {
 addScrollListener();
 
 buttonMenuStart.addEventListener('click', function (e) {
-	console.log(123)
-	headerMobile.style.display = 'flex';
+	headerMobile.style.top = 0;
 })
 
 buttonMenuScroll.addEventListener('click', function (e) {
-	console.log(123)
-	headerMobile.style.display = 'flex';
+	headerMobile.style.top = 0;
 })
 
 buttonExit.addEventListener('click', function (e) {
-	headerMobile.style.display = 'none';
+	headerMobile.style.top = '-100%';
 })
