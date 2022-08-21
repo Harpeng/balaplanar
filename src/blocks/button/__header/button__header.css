@@ -1,5 +1,6 @@
 .button__header {
-	width: 224px;
+	width: 100%;
+	max-width: 224px;
 	height: 52px;
 	margin: 34px 20px 34px 0;
 	font-size: 16px;

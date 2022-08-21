@@ -1,5 +1,6 @@
 .button_telegram {
-	width: 156px;
+	width: 100%;
+	max-width: 156px;
 	height: 52px;
 	margin: 0 10px 0 0;
 	font-size: 16px;
