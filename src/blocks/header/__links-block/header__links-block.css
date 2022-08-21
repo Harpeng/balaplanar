@@ -5,3 +5,9 @@
 	align-items: center;
 	gap: 126px;
 }
+
+@media screen and (max-width: 320px) {
+	.header__links-block {
+		display: none;
+	}
+}
