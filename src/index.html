@@ -506,11 +506,11 @@
 					</div>
 
 					<div class="partners">
-						<h4 class="partners__title">Наши партнеры</h4>
+						<h4 class="partners__title">Наши партнёры</h4>
 						<div class="partners__logos">
-							<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="partners__logo partners__logo_lwb">
-							<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo partners__logo_og">
-							<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo partners__logo_hb">
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_lwb"><img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="partners__logo_lwb"></div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_og"><img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo_og"></div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_hb"><img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo_hb"></div>
 						</div>
 					</div>
 
@@ -638,9 +638,7 @@
 						<button type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
 				</div>
-
-
-				<div class="popup popup__partners">
+				<div class="popup popup__partners" id="partners__logo_lwb-popup">
 
 					<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="popup__logo popup__logo_lwb">
 
@@ -653,27 +651,20 @@
 
 					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
 
-					<button aria-label="Close" type="button" class="popup__close-button"></button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
 				</div>
-
-				<div class="popup popup__partners">
-
+				<div class="popup popup__partners" id="partners__logo_og-popup">
 					<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo partners__logo_og">
-
-
 					<p class="popup__description">
 						Фонд работает в 45 регионах и с осени 2021 мы их единственные партнёры в Карачаево-Черкесии.
 						Совместно проводим программу профориентации «Поколение Выбор».
 						В 2021–2022 в ней приняли участие 35 подростков из 2 школ аула Икон-Халк и посёлка Эркен-Шахар.
 						В сезоне 2022–2023 планируются ещё две школы.
 					</p>
-
 					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
-
-					<button aria-label="Close" type="button" class="popup__close-button"></button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
 				</div>
-
-				<div class="popup popup__partners">
+				<div class="popup popup__partners" id="partners__logo_hb-popup">
 
 					<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo partners__logo_hb">
 
@@ -685,10 +676,8 @@
 
 					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
 
-					<button aria-label="Close" type="button" class="popup__close-button"></button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
 				</div>
-
-
 			</main>
 		</div>
 	</body>

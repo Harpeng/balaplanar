@@ -25,7 +25,8 @@ function closePopup(popup) {
 
 function closePopupByOverlayAndIcon (evt) {
   if (evt.target.classList.contains(modalConfig.closeBtnSelector) ||
-    evt.target.classList.contains(modalConfig.activeModalClass)) {
-      closePopup(evt.target.closest(modalConfig.modalSelector));
-  }
+    evt.target.classList.contains(modalConfig.activeModalClass)) 
+      { 
+        closePopup(evt.target.closest(modalConfig.modalSelector));
+      }
 }
