@@ -1,4 +1,4 @@
-import './pages/index.css';
+import "./index.css";
 
 const headerStart = document.querySelector('.header__start');
 const headerScroll = document.querySelector('.header__scroll');
@@ -35,4 +35,3 @@ buttonMenuScroll.addEventListener('click', function (e) {
 buttonExit.addEventListener('click', function (e) {
 	headerMobile.style.top = '-100%';
 })
-

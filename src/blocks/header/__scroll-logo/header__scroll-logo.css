@@ -3,7 +3,7 @@
 	width: 192px;
 	height: 36px;
 	margin: 22px 0 22px 20px;
-	background-image: url(../../../../images/logo_balapanlar-scroll.svg);
+	background-image: url(../../../images/logo_balapanlar-scroll.svg);
 	background-repeat: no-repeat;
 }
 
@@ -12,6 +12,6 @@
 		width: 101px;
 		height: 22px;
 		margin: 10px 0 10px 15px;
-		background-image: url(../../../../images/small_logo_balapanlar.png);
+		background-image: url(../../../images/small_logo_balapanlar.png);
 	}
 }
