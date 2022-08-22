@@ -1,7 +1,11 @@
 .course__list {
-	display: flex;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(auto-fit, 595px);
 	justify-content: center;
-	margin: 0 10px;
+	gap: 7.5px 10px;
+	width: 100%;
+	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
