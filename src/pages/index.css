@@ -10,6 +10,7 @@
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__links-block/header__links-block.css);
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_theme/button_theme_black.css);
 @import url(../blocks/button/__header/button__header.css);
 @import url(../blocks/button/_lead/button_lead.css);
 @import url(../blocks/button/_telegram/button_telegram.css);
