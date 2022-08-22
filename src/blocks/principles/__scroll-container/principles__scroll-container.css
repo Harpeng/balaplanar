@@ -1,20 +1,24 @@
 .principles__scroll-container {
     margin: 0;
     padding: 0;
-    background: #AE46FF;
-    border-radius: 60px;
+    height: 100vh;
     width: 300%;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    border: 1px black solid;
+
 }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .principles__scroll-container {
+        margin: 0 auto;
+        padding: 0;
         border: 11px black solid;
+        height: auto;
         width: 100vw;
-        height: 100%;
+        flex-direction: column;
     }
 }
