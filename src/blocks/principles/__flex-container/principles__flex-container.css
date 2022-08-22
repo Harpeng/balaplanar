@@ -1,4 +1,4 @@
-.principles__flex-container {
+/* .principles__flex-container {
     margin: 0;
     padding: 0%;
     width: 300%;
@@ -16,6 +16,7 @@
         z-index: 222;
         display: flex;
         width: 100%;
+
         flex-direction: column;
     }
-}
+} */

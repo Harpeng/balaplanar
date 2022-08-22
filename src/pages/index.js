@@ -16,6 +16,7 @@ if (document.documentElement.clientWidth > 1000) {
         scrollTrigger: {
             trigger: container,
             pin: true,
+            pinType: 'transform',
             start: "center center",
             scrub: 0.5,
             markers: true,
