@@ -18,7 +18,7 @@
 	background-color: #ff8540;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.button_lead {
 		width: 224px;
 		height: 52px;

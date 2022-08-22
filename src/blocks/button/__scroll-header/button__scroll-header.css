@@ -6,7 +6,7 @@
 	background-color: #333333;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.button__scroll-header {
 		display: none;
 	}

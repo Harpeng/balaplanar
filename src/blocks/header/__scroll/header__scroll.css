@@ -1,8 +1,8 @@
 .header__scroll {
 	position: fixed;
-	top: 0;
+	top: -100%;
 	z-index: 1;
-	display: none;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -10,9 +10,11 @@
 	max-width: 1440px;
 	height: 80px;
 	background-color: #ffffff;
+	transition: 0.5s;
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 750px) {
 	.header__scroll {
 		height: 42px;
 	}

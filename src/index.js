@@ -13,11 +13,11 @@ let last_known_scroll_position = 0;
 function addScrollListener() {
 	window.addEventListener('scroll', function (e) {
 		if (last_known_scroll_position == 0 && window.scrollY !== 0) {
-			//headerStart.style.display = 'none';
-			headerScroll.style.display = 'flex';
+			headerStart.style.opacity = '0';
+			headerScroll.style.top = '0';
 		} if (last_known_scroll_position !== 0 && window.scrollY == 0) {
-			//headerStart.style.display = 'flex';
-			headerScroll.style.display = 'none';
+			headerStart.style.opacity = '1';
+			headerScroll.style.top = '-100%';
 		}
 		last_known_scroll_position = window.scrollY;
 	})
@@ -35,3 +35,4 @@ buttonMenuScroll.addEventListener('click', function (e) {
 buttonExit.addEventListener('click', function (e) {
 	headerMobile.style.top = '-100%';
 })
+
