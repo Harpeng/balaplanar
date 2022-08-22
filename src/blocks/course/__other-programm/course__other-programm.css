@@ -1,0 +1,9 @@
+.course__other-programm {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	max-width: 1220px;
+	margin: 10px 0 0;
+	padding: 0 0 10px;
+	list-style-type: none;
+}

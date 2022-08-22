@@ -1,0 +1,9 @@
+.course__review-button {
+	padding: 0;
+	color: black;
+	background-color: white;
+}
+
+.course__review-button:hover {
+	opacity: 0.6;
+}

@@ -1,14 +1,8 @@
 .button {
-	width: 224px;
-	height: 52px;
-	padding: 0 0 0 0;
-	color: #ffffff;
+	box-sizing: border-box;
+	color: white;
 	font-weight: 600;
-	font-size: 16px;
-	font-style: normal;
-	line-height: 1.25;
-	background-color: #252525;
+	text-align: center;
 	border: none;
 	border-radius: 50px;
-	cursor: pointer;
 }

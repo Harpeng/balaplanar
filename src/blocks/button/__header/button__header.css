@@ -1,9 +1,16 @@
 .button__header {
+	width: 100%;
+	max-width: 224px;
+	height: 52px;
 	margin: 34px 20px 34px 0;
+	font-size: 16px;
+	line-height: 1.25;
 }
 
 .button__header:hover {
 	background-color: #333333;
+	cursor: pointer;
+	transition: 0.3s linear;
 }
 
 
