@@ -1,5 +1,5 @@
 .about__container {
-	display: flex;
-	justify-content: space-between;
-	gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(291px, 1fr));
+	column-gap: 10px;
 }
