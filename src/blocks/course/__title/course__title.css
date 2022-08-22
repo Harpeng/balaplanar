@@ -1,7 +1,7 @@
 .course__title {
 	display: flex;
 	align-self: flex-start;
-	margin: 0 0 0 120px;
+	margin: 10px 0 0 120px;
 	padding-bottom: 40px;
 	font-weight: 600;
 	font-size: 60px;

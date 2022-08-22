@@ -1,0 +1,6 @@
+.popup__options {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	margin: 0;
+}
