@@ -27,16 +27,23 @@
     .principles__element:last-of-type>h2 {
         margin: 30px auto 160px auto;
     }
-
     .principles__description {
         margin: 30px auto 0 auto;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .principles__title {
         font-size: 36px;
         line-height: 44px;
-        text-align: center;
         letter-spacing: -1px;
         font-feature-settings: 'pnum' on, 'lnum' on;
     }
 }
+
 
 
 @media screen and (max-width: 320px) {
