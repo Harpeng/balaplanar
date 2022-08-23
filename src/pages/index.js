@@ -8,19 +8,19 @@ import { openPopup, closePopupByOverlayAndIcon } from '../components/popup';
 gsap.registerPlugin(ScrollTrigger);
 
 if (document.documentElement.clientWidth > 1024) {
-    gsap.to(scrollElements, {
-        xPercent: -100 * (scrollElements.length - 1),
-        ease: "none",
-    
-            trigger: container,
-            pin: true,
-            pinType: 'fixed',
-            start: "center center",
-            scrub: 0.5,
-            toggleClass: { className: 'principles__scroll-container_move', targets: container },
-            end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
-        }
-    });
+	gsap.to(scrollElements, {
+			xPercent: -100 * (scrollElements.length - 1),
+			ease: "none",
+			scrollTrigger: {
+					trigger: container,
+					pin: true,
+					pinType: 'fixed',
+					start: "center center",
+					scrub: 0.5,
+					toggleClass: { className: 'principles__scroll-container_move', targets: container },
+					end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
+			}
+	})
 }
 
 // popup
