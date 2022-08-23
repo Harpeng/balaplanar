@@ -45,7 +45,6 @@
 							</li>
 						</ul>
 					</nav>
-
 					<button
 						type="button"
 						aria-label="кнопка Записаться на курсы"
@@ -155,7 +154,6 @@
 				<section class="lead page__lead">
 					<div class="lead__image">
 						<h1 class="lead__title">Досуг и курсы для детей в аулах и сёлах</h1>
-
 						<button
 							type="button"
 							aria-label="кнопка Записаться на курсы"
@@ -601,18 +599,40 @@
 									</p>
 								</li>
 							</ul>
-
 					</div>
 
 					<div class="partners">
-						<h4 class="partners__title">Наши партнеры</h4>
+						<h4 class="partners__title">Наши партнёры</h4>
 						<div class="partners__logos">
-							<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="partners__logo partners__logo_lwb">
-							<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo partners__logo_og">
-							<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo partners__logo_hb">
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_lwb"><img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="partners__logo_lwb"></div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_og"><img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo_og"></div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_hb"><img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo_hb"></div>
 						</div>
 					</div>
 
+				</section>
+				<section class="principles">
+					<ul class="principles__scroll-container">
+						<h4 class="principles__title">Наши принципы</h4>
+
+						<li class="principles__element">
+							<img class="principles__image" src="<%=require('./images/princeples__first-image.png')%>"
+								alt="Актуальные знания и навыки">
+							<h2 class="principles__description"> Актуальные знания и навыки</h2>
+						</li>
+						<li class="principles__element ">
+							<img class="principles__image" src="<%=require('./images/princeples__second-image.png')%>"
+								alt="Равный доступ к образованию">
+							<h2 class="principles__description">Равный доступ к образованию</h2>
+						</li>
+						<li class="principles__element">
+							<img class="principles__image" src="<%=require('./images/princeples__third-image.png')%>"
+								alt="Инвестируем в развитие местных специалистов и экпертов">
+							<h2 class="principles__description">Инвестируем в развитие местных специалистов и экпертов
+							</h2>
+						</li>
+
+					</ul>
 				</section>
 
 				<div class="popup popup__course">
@@ -729,15 +749,49 @@
 							</button>
 							<button
 								type="button"
-								class="button course__button course__review-button"
+								class="button course__button course__review-button popup__close-button"
 							>
 								Закрыть
 							</button>
 						</div>
-						<button type="button" class="popup__close-button"></button>
+						<button type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
+				</div>
+				<div class="popup popup__partners" id="partners__logo_lwb-popup">
+				<div class="popup popup__partners">
+					<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders" class="popup__logo popup__logo_lwb">
+					<p class="popup__description">
+						Lecturers Without Borders - сообщество молодых учёных со всего мира,
+						которые проводят лекции и мастер-классы для школ. Среди лекторов много учёных из России.
+						Для нас математики из Сорбонны проводили занятия по квази-кристаллам,
+						а в будущем мы планируем привозить лекторов в наш центр.
+					</p>
+					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
+				</div>
+				<div class="popup popup__partners" id="partners__logo_og-popup">
+					<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты" class="partners__logo partners__logo_og">
+					<p class="popup__description">
+						Фонд работает в 45 регионах и с осени 2021 мы их единственные партнёры в Карачаево-Черкесии.
+						Совместно проводим программу профориентации «Поколение Выбор».
+						В 2021–2022 в ней приняли участие 35 подростков из 2 школ аула Икон-Халк и посёлка Эркен-Шахар.
+						В сезоне 2022–2023 планируются ещё две школы.
+					</p>
+					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
+				</div>
+				<div class="popup popup__partners" id="partners__logo_hb-popup">
+					<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo partners__logo_hb">
+					<p class="popup__description">
+						ХимБио — онлайн-школа и выездные программы для детей и подростков со всего мира!
+						Занимаются здесь химией, биологией и физикой, много практики и опытов.
+						Летом детей и подростков ждут экспедиции, а во время учебного года — курсы по самым разным направлениям.
+					</p>
+					<button aria-label="toPartner" type="button" class="popup__btn-partner">Перейти на сайт партнёра</button>
+					<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
 				</div>
 			</main>
 		</div>
 	</body>
 </html>
+

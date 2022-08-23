@@ -1,0 +1,21 @@
+.principles__scroll-container {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 300%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.principles__scroll-container {
+		flex-direction: column;
+		max-width: 90%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
