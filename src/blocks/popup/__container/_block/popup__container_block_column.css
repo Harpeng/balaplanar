@@ -1,0 +1,6 @@
+.popup__container_block_column {
+	align-items: center;
+	gap: 40px;
+	max-width: 885px;
+	padding: 40px;
+}
