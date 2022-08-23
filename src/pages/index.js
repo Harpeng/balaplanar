@@ -1,7 +1,29 @@
-import "./index.css";
+import './index.css';
+import { container, scrollElements, scrollElement } from '../utils/constants.js'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { modalConfig } from '../components/constants';
 import { openPopup, closePopupByOverlayAndIcon } from '../components/popup';
 
+gsap.registerPlugin(ScrollTrigger);
+
+if (document.documentElement.clientWidth > 1024) {
+	gsap.to(scrollElements, {
+			xPercent: -100 * (scrollElements.length - 1),
+			ease: "none",
+			scrollTrigger: {
+					trigger: container,
+					pin: true,
+					pinType: 'transform',
+					start: "center center",
+					scrub: 0.5,
+					toggleClass: { className: 'principles__scroll-container_move', targets: container },
+					end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
+			}
+	})
+}
+
+// popup
 const courseReviewBtn = document.querySelector('.course__review-button');
 const courseReviewPopup = document.querySelector('.popup__course');
 
@@ -14,14 +36,59 @@ const partnerOgPopup = document.querySelector('#partners__logo_og-popup');
 const partnerHbPopup = document.querySelector('#partners__logo_hb-popup');
 
 
-partnerLwbLogo.addEventListener('click', () => { openPopup(partnerLwbPopup)});
-partnerOgLogo.addEventListener('click', () => { openPopup(partnerOgPopup)});
-partnerHbLogo.addEventListener('click', () => { openPopup(partnerHbPopup)});
+partnerLwbLogo.addEventListener('click', () => { openPopup(partnerLwbPopup) });
+partnerOgLogo.addEventListener('click', () => { openPopup(partnerOgPopup) });
+partnerHbLogo.addEventListener('click', () => { openPopup(partnerHbPopup) });
 
 const popups = document.querySelectorAll(modalConfig.modalSelector);
 
 courseReviewBtn.addEventListener('click', () => openPopup(courseReviewPopup));
 
 popups.forEach((popup) => {
-	popup.addEventListener('click', closePopupByOverlayAndIcon);
+    popup.addEventListener('click', closePopupByOverlayAndIcon);
 });
+
+window.addEventListener('wheel', (e) => {
+    if (e.ctrlKey) {
+        e.preventDefault()
+        return false
+    }
+}, { passive: false })
+
+// header menu
+
+const headerStart = document.querySelector('.header__start');
+const headerScroll = document.querySelector('.header__scroll');
+const buttonMenuStart = headerStart.querySelector('.header__menu');
+const buttonMenuScroll = headerScroll.querySelector('.header__menu');
+const headerMobile = document.querySelector('.header__mobile');
+const buttonExit = document.querySelector('.button-exit');
+
+
+let last_known_scroll_position = 0;
+
+function addScrollListener() {
+	window.addEventListener('scroll', function (e) {
+		if (last_known_scroll_position == 0 && window.scrollY !== 0) {
+			headerStart.style.opacity = '0';
+			headerScroll.style.top = '0';
+		} if (last_known_scroll_position !== 0 && window.scrollY == 0) {
+			headerStart.style.opacity = '1';
+			headerScroll.style.top = '-100%';
+		}
+		last_known_scroll_position = window.scrollY;
+	})
+}
+addScrollListener();
+
+buttonMenuStart.addEventListener('click', function (e) {
+	headerMobile.style.top = 0;
+})
+
+buttonMenuScroll.addEventListener('click', function (e) {
+	headerMobile.style.top = 0;
+})
+
+buttonExit.addEventListener('click', function (e) {
+	headerMobile.style.top = '-100%';
+})

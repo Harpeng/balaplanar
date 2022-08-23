@@ -15,7 +15,7 @@
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.lead__image {
 		background: url(../../../images/lead_image-mobile.svg);
 		background-repeat: no-repeat;

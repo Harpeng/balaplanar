@@ -1,0 +1,8 @@
+.principles {
+	width: 100%;
+	max-width: 1440px;
+	height: unset;
+	overflow: hidden;
+	background: #ae46ff;
+	border-radius: 60px;
+}

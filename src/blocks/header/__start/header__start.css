@@ -1,0 +1,32 @@
+.header__start {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 1400px) {
+	.header__start {
+		gap: 80px;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.header__start {
+		gap: 40px;
+	}
+}
+
+@media screen and (max-width: 1250px) {
+	.header__start {
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.header__start {
+		gap: 0;
+	}
+}

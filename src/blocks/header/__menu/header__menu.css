@@ -2,15 +2,20 @@
 	display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.header__menu {
 		display: block;
 		width: 30px;
 		height: 30px;
 		margin: 6px 15px 6px 0;
+		padding: 0 0 0 0;
 		background-color: #ffffff;
 		background-image: url(../../../images/menu.png);
 		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 		border: none;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
 	}
 }
