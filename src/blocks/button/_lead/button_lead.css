@@ -18,7 +18,7 @@
 	transition: 0.3s linear;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.button_lead {
 		width: 100%;
 		max-width: 224px;
