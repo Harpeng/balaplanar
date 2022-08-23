@@ -4,6 +4,11 @@ import {
 } from '../utils/constants.js'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+let principlesSection = document.querySelector('.principles')
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -18,12 +23,10 @@ if (document.documentElement.clientWidth > 1024) {
             pin: true,
             pinType: 'transform',
             start: "center center",
-            scrub: 1,
+            scrub: 0.5,
             toggleClass: { className: 'principles__scroll-container_move', targets: container },
             end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
         }
     });
-
 }
-
 
