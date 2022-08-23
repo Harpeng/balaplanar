@@ -1,0 +1,21 @@
+.principles__image {
+    margin: 0 auto;
+    padding: 0%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .principles__element:first-of-type>img {
+        margin: 0 auto 0 auto;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .principles__image {
+        max-width: 79.86%;
+    }
+}
