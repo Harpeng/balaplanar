@@ -11,7 +11,7 @@ if (document.documentElement.clientWidth > 1024) {
     gsap.to(scrollElements, {
         xPercent: -100 * (scrollElements.length - 1),
         ease: "none",
-        scrollTrigger: {
+    
             trigger: container,
             pin: true,
             pinType: 'fixed',
@@ -23,10 +23,7 @@ if (document.documentElement.clientWidth > 1024) {
     });
 }
 
-console.log(document.documentElement.clientWidth)
-console.log(scrollElement.offsetWidth)
-console.log(document.querySelector('.principles__title').offsetWidth)
-
+// popup
 const courseReviewBtn = document.querySelector('.course__review-button');
 const courseReviewPopup = document.querySelector('.popup__course');
 
@@ -58,3 +55,40 @@ window.addEventListener('wheel', (e) => {
     }
 }, { passive: false })
 
+// header menu
+
+const headerStart = document.querySelector('.header__start');
+const headerScroll = document.querySelector('.header__scroll');
+const buttonMenuStart = headerStart.querySelector('.header__menu');
+const buttonMenuScroll = headerScroll.querySelector('.header__menu');
+const headerMobile = document.querySelector('.header__mobile');
+const buttonExit = document.querySelector('.button-exit');
+
+
+let last_known_scroll_position = 0;
+
+function addScrollListener() {
+	window.addEventListener('scroll', function (e) {
+		if (last_known_scroll_position == 0 && window.scrollY !== 0) {
+			headerStart.style.opacity = '0';
+			headerScroll.style.top = '0';
+		} if (last_known_scroll_position !== 0 && window.scrollY == 0) {
+			headerStart.style.opacity = '1';
+			headerScroll.style.top = '-100%';
+		}
+		last_known_scroll_position = window.scrollY;
+	})
+}
+addScrollListener();
+
+buttonMenuStart.addEventListener('click', function (e) {
+	headerMobile.style.top = 0;
+})
+
+buttonMenuScroll.addEventListener('click', function (e) {
+	headerMobile.style.top = 0;
+})
+
+buttonExit.addEventListener('click', function (e) {
+	headerMobile.style.top = '-100%';
+})

@@ -1,0 +1,7 @@
+.button__mobile-header{
+	margin: 0 48px 30px 48px;
+}
+
+.button__header:hover {
+	background-color: #333333;
+}

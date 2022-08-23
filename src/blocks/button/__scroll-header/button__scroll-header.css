@@ -1,21 +1,22 @@
-.button__header {
+.button__scroll-header{
 	width: 224px;
 	height: 52px;
-	margin: 34px 20px 34px 0;
+	margin: 14px 20px 14px 0;
 	padding: 0 0 0 0;
 	font-size: 16px;
+	font-style: normal;
 	line-height: 1.25;
+	background-color: #252525;
 	cursor: pointer;
 }
 
-.button__header:hover {
+.button__scroll-header {
 	background-color: #333333;
 	transition: 0.3s linear;
 }
 
-
 @media screen and (max-width: 750px) {
-	.button__header {
+	.button__scroll-header {
 		display: none;
 	}
 }
