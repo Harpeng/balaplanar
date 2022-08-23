@@ -1,6 +1,7 @@
 .course__other-programm {
-	display: flex;
-	align-items: flex-start;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: minmax(300px, 386px) minmax(300px, 408px) minmax(300px, 386px);
 	gap: 10px;
 	max-width: 1220px;
 	margin: 10px 0 0;

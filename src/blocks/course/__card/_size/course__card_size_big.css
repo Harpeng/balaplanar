@@ -1,0 +1,6 @@
+.course__card_size_big {
+	display: flex;
+	grid-template-columns: repeat(auto-fit, 408px);
+	flex-direction: column;
+	justify-content: space-between;
+}
