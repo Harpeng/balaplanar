@@ -3,4 +3,14 @@
 	font-weight: 600;
 	font-size: 60px;
 	line-height: 1.13;
+	letter-spacing: -1px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.about__title {
+		max-width: 595px;
+		margin: 0 auto;
+		font-size: 36px;
+		line-height: 1.22;
+	}
 }

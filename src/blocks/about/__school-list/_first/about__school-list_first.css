@@ -1,0 +1,10 @@
+.about__school-list_first {
+	margin-top: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.about__school-list_first {
+		margin-top: 33px;
+		margin-bottom: 60px;
+	}
+}
