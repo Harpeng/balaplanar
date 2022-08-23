@@ -12,23 +12,18 @@ gsap.registerPlugin(ScrollTrigger);
 if (document.documentElement.clientWidth > 1024) {
     gsap.to(scrollElements, {
         xPercent: -100 * (scrollElements.length - 1),
-        // ease: "none",
+        ease: "none",
         scrollTrigger: {
             trigger: container,
             pin: true,
             pinType: 'transform',
             start: "center center",
             scrub: 1,
-            markers: true,
             toggleClass: { className: 'principles__scroll-container_move', targets: container },
             end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
         }
     });
 
-
-
 }
-
-
 
 

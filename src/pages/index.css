@@ -26,7 +26,6 @@
 @import url(../blocks/principles/principles.css);
 @import url(../blocks/principles/__scroll-container/principles__scroll-container.css);
 @import url(../blocks/principles/__scroll-container/_move/principles__scroll-container_move.css);
-@import url(../blocks/principles/__flex-container/principles__flex-container.css);
 @import url(../blocks/principles/__element/principles__element.css);
 @import url(../blocks/principles/__description/principles__description.css);
 @import url(../blocks/principles/__image/principles__image.css);

@@ -1,13 +1,12 @@
 .principles__scroll-container {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
     width: 300%;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    border: 1px black solid;
-
+    box-sizing: border-box;
 }
 
 
@@ -16,9 +15,8 @@
     .principles__scroll-container {
         margin: 0 auto;
         padding: 0;
-        border: 11px black solid;
         height: auto;
-        width: 100vw;
+        max-width: 90%;
         flex-direction: column;
     }
 }
