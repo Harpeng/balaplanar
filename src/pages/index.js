@@ -14,7 +14,7 @@ if (document.documentElement.clientWidth > 1024) {
 			scrollTrigger: {
 					trigger: container,
 					pin: true,
-					pinType: 'transform',
+					pinType: 'fixed',
 					start: "center center",
 					scrub: 0.5,
 					toggleClass: { className: 'principles__scroll-container_move', targets: container },
