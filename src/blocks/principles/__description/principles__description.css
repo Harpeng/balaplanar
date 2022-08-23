@@ -1,54 +1,52 @@
 .principles__description {
-    margin: 40px auto 160px auto;
-    padding: 0%;
-    max-width: 847px;
-    text-align: center;
-    font-size: 60px;
-    line-height: 68px;
-    color: white;
-    font-weight: 600;
-    letter-spacing: -1px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+	max-width: 847px;
+	margin: 40px auto 160px auto;
+	padding: 0%;
+	color: white;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 1.13;
+	letter-spacing: -1px;
+	text-align: center;
+	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 
 @media screen and (max-width: 1024px) {
-    .principles__description {
-        margin: 30px auto 0 auto;
-        max-width: 90%;
-    }
+	.principles__description {
+		max-width: 90%;
+		margin: 30px auto 0 auto;
+	}
 
-    .principles__element:last-of-type>h2 {
-        margin: 30px auto 160px auto;
-    }
+	.principles__element:last-of-type > h2 {
+		margin: 30px auto 160px auto;
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .principles__element:last-of-type>h2 {
-        margin: 30px auto 160px auto;
-    }
-    .principles__description {
-        margin: 30px auto 0 auto;
-        text-align: center;
-    }
-}
+	.principles__element:last-of-type > h2 {
+		margin: 30px auto 160px auto;
+	}
 
+	.principles__description {
+		margin: 30px auto 0 auto;
+		text-align: center;
+	}
+}
 
 
 @media screen and (max-width: 425px) {
-    .principles__title {
-        font-size: 36px;
-        line-height: 44px;
-        letter-spacing: -1px;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-    }
+	.principles__title {
+		font-size: 36px;
+		line-height: 1.22;
+		letter-spacing: -1px;
+		font-feature-settings: 'pnum' on, 'lnum' on;
+	}
 }
 
 
-
 @media screen and (max-width: 320px) {
-    .principles__element:last-of-type>h2 {
-        margin: 30px auto 30px auto;
-    }
-
+	.principles__element:last-of-type > h2 {
+		margin: 30px auto 30px auto;
+	}
 }

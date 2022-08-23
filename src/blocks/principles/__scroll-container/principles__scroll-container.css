@@ -1,22 +1,21 @@
 .principles__scroll-container {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 300%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 300%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 
-
 @media screen and (max-width: 1024px) {
-    .principles__scroll-container {
-        margin: 0 auto;
-        padding: 0;
-        height: auto;
-        max-width: 90%;
-        flex-direction: column;
-    }
+	.principles__scroll-container {
+		flex-direction: column;
+		max-width: 90%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
 }
