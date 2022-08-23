@@ -1,9 +1,8 @@
 .principles {
-	position: relative;
+	width: 100%;
 	max-width: 1440px;
-
-	/* padding: -120px; */
-	margin: 0;
+	height: unset;
+	overflow: hidden;
 	background: #ae46ff;
 	border-radius: 60px;
 }
