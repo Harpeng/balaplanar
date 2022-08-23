@@ -2,9 +2,18 @@
 	display: flex;
 	align-self: flex-start;
 	margin: 10px 0 0 120px;
-	padding-bottom: 40px;
+	padding-bottom: 37.5px;
 	font-weight: 600;
 	font-size: 60px;
 	line-height: 1.13;
 	letter-spacing: -1px;
+}
+
+@media screen and (max-width: 768px) {
+	.course__title {
+		margin: 15px;
+		padding-bottom: 30px;
+		font-size: 36px;
+		line-height: 1.22;
+	}
 }

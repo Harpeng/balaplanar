@@ -50,6 +50,7 @@
 @import url(../blocks/course/__description/_block/course__description_block_small.css);
 @import url(../blocks/course/__text-list/course__text-list.css);
 @import url(../blocks/course/__button/course__button.css);
+@import url(../blocks/course/__link/course__link.css);
 @import url(../blocks/course/__record-button/course__record-button.css);
 @import url(../blocks/course/__review-button/course__review-button.css);
 @import url(../blocks/course/__price-block/course__price-block.css);
