@@ -1,0 +1,5 @@
+.popup__quality-block {
+	display: flex;
+	flex-direction: row;
+	margin: 15px 78px 0 0;
+}

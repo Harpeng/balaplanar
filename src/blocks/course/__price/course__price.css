@@ -1,0 +1,7 @@
+.course__price {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 400px;
+	margin: 30px 0 30px 30px;
+}

@@ -1,0 +1,10 @@
+.course__title {
+	display: flex;
+	align-self: flex-start;
+	margin: 10px 0 0 120px;
+	padding-bottom: 40px;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 1.13;
+	letter-spacing: -1px;
+}

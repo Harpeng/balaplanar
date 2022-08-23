@@ -1,0 +1,8 @@
+.course__programming {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding-bottom: 7.5px;
+	border-radius: 70px;
+}
