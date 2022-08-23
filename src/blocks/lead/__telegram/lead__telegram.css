@@ -12,7 +12,7 @@
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.lead__telegram {
 		display: none;
 	}

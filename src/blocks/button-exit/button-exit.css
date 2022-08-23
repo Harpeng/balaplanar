@@ -1,0 +1,11 @@
+.button-exit {
+	position: absolute;
+	top: 4px;
+	left: 280px;
+	width: 30px;
+	height: 30px;
+	padding: 0 0 0 0;
+	background-color: #ffffff;
+	background-image: url(../../images/button_exit.svg);
+	border: none;
+}

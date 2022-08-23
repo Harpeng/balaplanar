@@ -11,7 +11,7 @@
 	/* overflow-x: hidden; */
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 750px) {
 	.page {
 		max-width: 320px;
 	}
