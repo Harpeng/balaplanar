@@ -1,3 +1,18 @@
 .partners {
-	padding: 160px 15px 0;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 80px 15px 120px;
+	background-color: #ffffff;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+}
+
+@media screen and (max-width: 600px){
+	.partners {
+		padding-top: 30px;
+		padding-right: calc((100% - 290px) / 2);
+		padding-bottom: 49px;
+		padding-left: calc((100% - 290px) / 2);
+		border-radius: 0;
+	}
 }

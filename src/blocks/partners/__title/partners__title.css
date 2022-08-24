@@ -1,6 +1,6 @@
 .partners__title {
-	max-width: 821px;
-	margin: 0 auto;
+	max-width: 100%;
+	margin: 0 auto 80px;
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 1.22;
@@ -8,9 +8,18 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1024px) {
 	.partners__title {
-		max-width: 300px;
+		font-size: 30px;
+		line-height: 1.22;
+		letter-spacing: -0.5px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.partners__title {
+		max-width: 290px;
+		margin-bottom: 30px;
 		font-size: 24px;
 		line-height: 1.21;
 		text-align: left;
