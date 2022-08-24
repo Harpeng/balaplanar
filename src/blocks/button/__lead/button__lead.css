@@ -1,8 +1,7 @@
-.button_lead {
+.button__lead {
 	width: 100%;
 	max-width: 395px;
-	height: 104px;
-	padding: 0 0 0 0;
+	padding: 35px 45px 35px 45px;
 	font-size: 28px;
 	font-style: normal;
 	line-height: 1.21;
@@ -12,14 +11,14 @@
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-.button_lead:hover {
+.button__lead:hover {
 	background-color: #ff8540;
 	cursor: pointer;
 	transition: 0.3s linear;
 }
 
 @media screen and (max-width: 750px) {
-	.button_lead {
+	.button__lead {
 		width: 100%;
 		max-width: 224px;
 		height: 52px;

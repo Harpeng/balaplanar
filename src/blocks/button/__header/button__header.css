@@ -1,18 +1,10 @@
 .button__header {
-	width: 224px;
-	height: 52px;
+	max-width: 224px;
 	margin: 34px 20px 34px 0;
-	padding: 0 0 0 0;
+	padding: 16px 22px 16px 22px;
 	font-size: 16px;
 	line-height: 1.25;
-	cursor: pointer;
 }
-
-.button__header:hover {
-	background-color: #333333;
-	transition: 0.3s linear;
-}
-
 
 @media screen and (max-width: 750px) {
 	.button__header {
