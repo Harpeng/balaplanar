@@ -16,3 +16,9 @@
 		border-radius: 0;
 	}
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.partners {
+		padding: 60px 15px 0;
+	}
+}

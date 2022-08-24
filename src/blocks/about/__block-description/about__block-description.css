@@ -6,3 +6,10 @@
 	line-height: 1.22;
 	letter-spacing: -0.5px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+	.about__block-description {
+		margin: 29px auto 0;
+		font-size: 18px;
+	}
+}
