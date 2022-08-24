@@ -1,10 +1,10 @@
 .principles__description {
-	max-width: 847px;
-	margin: 4vh auto 16vh auto;
+	max-width: 58.81vw;
+	margin: 4.81vh auto calc(18.82vh - 80px) auto;
 	padding: 0%;
 	color: white;
 	font-weight: 600;
-	font-size: 60px;
+	font-size: 7.22vh;
 	line-height: 1.13;
 	letter-spacing: -1px;
 	text-align: center;
@@ -14,37 +14,23 @@
 @media screen and (max-width: 1400px) {
 	.principles__description {
 		max-width: 58.81vw;
-		margin-top: 1vh;
+		margin-top: 4vh;
+		margin-bottom: 11vh;
 		font-size: 6vh;
-	}
-
-	.principles__element:last-of-type > h2 {
-		margin-bottom: 1vh;
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	.principles__description {
 		max-width: 90%;
-		margin: 30px auto 0 auto;
+		margin: 8.51vw auto 0 auto;
+		font-size: 6.45vw;
 	}
 
 	.principles__element:last-of-type > h2 {
-		margin: 30px auto 160px auto;
+		margin-bottom: 28.22vw;
 	}
 }
-
-@media screen and (max-width: 768px) {
-	.principles__element:last-of-type > h2 {
-		margin: 30px auto 160px auto;
-	}
-
-	.principles__description {
-		margin: 30px auto 0 auto;
-		text-align: center;
-	}
-}
-
 
 @media screen and (max-width: 425px) {
 	.principles__title {

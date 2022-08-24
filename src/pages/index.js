@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 if (document.documentElement.clientWidth > 1024) {
 	gsap.to(scrollElements, {
-		xPercent: -100 * (scrollElements.length - 1),
 		ease: "none",
 		scrollTrigger: {
 			trigger: container,
@@ -17,13 +16,14 @@ if (document.documentElement.clientWidth > 1024) {
 			pinType: 'fixed',
 			markers: true,
 			start: "top 80px",
-			scrub: 1,
+			scrub: true,
 			//	toggleClass: { className: 'principles__scroll-container_move', targets: container },
 			end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
-		}
+		},
+		xPercent: -100 * (scrollElements.length - 1),
 	})
 }
-
+console.log(innerWidth, innerHeight)
 // popup
 const courseReviewBtn = document.querySelector('.course__review-button');
 const courseReviewPopup = document.querySelector('.popup__course');

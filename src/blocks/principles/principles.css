@@ -1,4 +1,5 @@
 .principles {
+	position: relative;
 	width: 100vw;
 	max-width: 1440px;
 	height: unset;
