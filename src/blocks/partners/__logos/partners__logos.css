@@ -1,25 +1,22 @@
 .partners__logos {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(202px, 1fr));
+	justify-items: center;
 	align-items: center;
+	box-sizing: border-box;
 	max-width: 885px;
 	min-height: 239px;
 	margin: 0 auto;
-
-	/* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-  align-items: center;
-  justify-items: center; */
+	border: 2px solid #eaf0ff;
 	border-radius: 60px;
-	outline: 2px solid #eaf0ff;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1024px){
 	.partners__logos {
-		max-width: 300px;
-		min-height: 472px;
-		margin: 30px auto 0;
-		border-radius: 30px;
+		grid-template-columns: repeat(auto-fill, 290px);
+		gap: 10px;
+		width: fit-content;
+		max-width: 100%;
+		border: none;
 	}
 }
