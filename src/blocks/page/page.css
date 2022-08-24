@@ -8,9 +8,3 @@
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	background-color: #eaf0ff;
 }
-
-@media screen and (max-width: 750px) {
-	.page {
-		max-width: 320px;
-	}
-}
