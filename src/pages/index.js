@@ -9,17 +9,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 if (document.documentElement.clientWidth > 1024) {
 	gsap.to(scrollElements, {
-			xPercent: -100 * (scrollElements.length - 1),
-			ease: "none",
-			scrollTrigger: {
-					trigger: container,
-					pin: true,
-					pinType: 'fixed',
-					start: "center center",
-					scrub: 0.5,
-					toggleClass: { className: 'principles__scroll-container_move', targets: container },
-					end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
-			}
+		xPercent: -100 * (scrollElements.length - 1),
+		ease: "none",
+		scrollTrigger: {
+			trigger: container,
+			pin: true,
+			pinType: 'fixed',
+			markers: true,
+			start: "top 80px",
+			scrub: 1,
+			//	toggleClass: { className: 'principles__scroll-container_move', targets: container },
+			end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
+		}
 	})
 }
 
@@ -45,14 +46,14 @@ const popups = document.querySelectorAll(modalConfig.modalSelector);
 courseReviewBtn.addEventListener('click', () => openPopup(courseReviewPopup));
 
 popups.forEach((popup) => {
-    popup.addEventListener('click', closePopupByOverlayAndIcon);
+	popup.addEventListener('click', closePopupByOverlayAndIcon);
 });
 
 window.addEventListener('wheel', (e) => {
-    if (e.ctrlKey) {
-        e.preventDefault()
-        return false
-    }
+	if (e.ctrlKey) {
+		e.preventDefault()
+		return false
+	}
 }, { passive: false })
 
 // header menu

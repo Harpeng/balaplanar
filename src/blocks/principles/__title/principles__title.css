@@ -16,6 +16,13 @@
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
+@media screen and (max-width: 1400px) {
+	.principles__title {
+		top: 5vh;
+		font-size: 3.6vh;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.principles__title {
 		margin-right: auto;
@@ -23,13 +30,11 @@
 	}
 }
 
-
 /*
 @media screen and (max-width: 768px) {
     .principles__title {
     }
 } */
-
 
 @media screen and (max-width: 425px) {
 	.principles__title {

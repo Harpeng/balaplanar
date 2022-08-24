@@ -1,17 +1,21 @@
 .principles__image {
 	max-height: 420px;
 	margin: 0 auto;
-	padding: 0%;
 	object-fit: cover;
+	padding: 0;
 }
 
-
-@media screen and (max-width: 1024px) {
-	.principles__element:first-of-type > img {
-		margin: 0 auto 0 auto;
+@media screen and (max-width: 1400px) {
+	.principles__image {
+		height: 42vh;
 	}
 }
 
+/* @media screen and (max-width: 1024px) {
+	.principles__element:first-of-type > img {
+		margin: 0 auto 0 auto;
+	}
+} */
 
 @media screen and (max-width: 768px) {
 	.principles__image {

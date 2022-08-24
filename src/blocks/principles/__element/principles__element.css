@@ -1,5 +1,5 @@
 .principles__element {
-	z-index: 333;
+	z-index: 22;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -8,8 +8,20 @@
 	padding: 0%;
 }
 
+
 .principles__element:first-of-type {
 	margin-top: 244px;
+}
+
+
+@media screen and (max-width: 1400px) {
+	.principles__element:first-of-type {
+		margin-top: 12vh;
+	}
+
+	.principles__element {
+		margin-top: 12vh;
+	}
 }
 
 @media screen and (max-width: 1024px) {
