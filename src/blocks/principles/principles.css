@@ -1,5 +1,6 @@
 .principles {
-	width: 100%;
+	position: relative;
+	width: 100vw;
 	max-width: 1440px;
 	height: unset;
 	overflow: hidden;

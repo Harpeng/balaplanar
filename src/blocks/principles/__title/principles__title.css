@@ -1,6 +1,6 @@
 .principles__title {
 	position: absolute;
-	top: 120px;
+	top: 12vh;
 	right: 0;
 	left: 0;
 	z-index: 22;
@@ -16,26 +16,19 @@
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
 	.principles__title {
-		margin-right: auto;
-		margin-left: auto;
+		top: 7vh;
+		font-size: 3.6vh;
 	}
 }
 
-
-/*
-@media screen and (max-width: 768px) {
-    .principles__title {
-    }
-} */
-
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1024px) {
 	.principles__title {
-		max-width: 229px;
-		font-size: 24px;
-		line-height: 1.21;
+		top: 16.13vw;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 4.03vw;
 	}
 }
 
