@@ -1,6 +1,7 @@
 .lead__container-telegram {
 	display: flex;
 	flex-basis: 340px;
+	justify-content: center;
 	align-items: flex-end;
 	width: 100%;
 	max-width: 1200px;
@@ -9,5 +10,11 @@
 @media screen and (max-width: 750px) {
 	.lead__container-telegram {
 		flex-basis: 273px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.lead__container-telegram {
+		flex-basis: 800px;
 	}
 }

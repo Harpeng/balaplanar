@@ -6,7 +6,7 @@
 	line-height: 1.25;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
 	.button__header {
 		display: none;
 	}

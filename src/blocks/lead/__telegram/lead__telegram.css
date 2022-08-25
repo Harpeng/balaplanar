@@ -12,8 +12,24 @@
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
 	.lead__telegram {
-		display: none;
+		gap: 50px;
+		max-width: 594px;
+		padding: 15px 20px 15px 20px;
+		border-radius: 50px;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.lead__telegram {
+		flex-direction: column;
+		gap: 0;
+		box-sizing: border-box;
+		max-width: 320px;
+		height: 224px;
+		margin: 19px 0 0 0;
+		border-radius: 40px;
 	}
 }

@@ -61,6 +61,7 @@ const buttonMenuStart = headerStart.querySelector('.header__menu');
 const buttonMenuScroll = headerScroll.querySelector('.header__menu');
 const headerMobile = document.querySelector('.header__mobile');
 const buttonExit = document.querySelector('.button-exit');
+const headerMobileLinks = headerMobile.querySelectorAll('.header__mobile-link');
 
 const menuCloseEsc = (evt) => {
 	if (evt.key == "Escape") {
@@ -103,3 +104,15 @@ function closeMenuMobile() {
 	headerMobile.style.top = '-100%';
 	document.removeEventListener('keydown', menuCloseEsc);
 }
+
+function addListenerToMobileLinks() {
+	headerMobileLinks.forEach(
+		function addListener(link) {
+			link.addEventListener('click', (e) => {
+				closeMenuMobile();
+			})
+		}
+	)
+}
+
+addListenerToMobileLinks();

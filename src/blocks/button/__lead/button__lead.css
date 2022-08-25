@@ -1,11 +1,11 @@
 .button__lead {
-	width: 100%;
 	max-width: 395px;
 	padding: 35px 45px 35px 45px;
 	font-size: 28px;
 	font-style: normal;
 	line-height: 1.21;
 	letter-spacing: -0.5px;
+	text-align: center;
 	background-color: #ff7628;
 	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 	font-feature-settings: 'pnum' on, 'lnum' on;
@@ -19,10 +19,14 @@
 
 @media screen and (max-width: 750px) {
 	.button__lead {
-		width: 100%;
-		max-width: 224px;
-		height: 52px;
+		padding: 16px 22px 16px 22px;
 		font-size: 16px;
 		line-height: 1.25;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.button__lead {
+		margin: 0 48px 0 48px;
 	}
 }
