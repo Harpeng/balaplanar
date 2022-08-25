@@ -1,15 +1,14 @@
 .principles__title {
 	position: absolute;
-	top: 120px;
+	top: 16vh;
 	right: 0;
 	left: 0;
-	z-index: 22;
-	display: block;
+	z-index: 3;
+	max-width: 100%;
 	margin: 0;
-	padding: 0%;
 	color: white;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 3.6vh;
 	line-height: 1.22;
 	letter-spacing: -1px;
 	text-align: center;
@@ -18,30 +17,15 @@
 
 @media screen and (max-width: 1024px) {
 	.principles__title {
-		margin-right: auto;
-		margin-left: auto;
+		top: 160;
+		margin: 0 auto 0 auto;
 	}
 }
-
-
-/*
-@media screen and (max-width: 768px) {
-    .principles__title {
-    }
-} */
-
 
 @media screen and (max-width: 425px) {
 	.principles__title {
-		max-width: 229px;
-		font-size: 24px;
-		line-height: 1.21;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.principles__title {
 		top: 30px;
+		max-width: 229px;
 		font-size: 24px;
 		line-height: 1.21;
 	}

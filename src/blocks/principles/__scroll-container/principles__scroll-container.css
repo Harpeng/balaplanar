@@ -1,26 +1,27 @@
 .principles__scroll-container {
+	z-index: 2;
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: repeat(3, 100%);
-	row-gap: 0;
-	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
+	max-width: calc(100% * 3);
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
-	column-gap: 0;
+	overflow: hidden;
 	list-style: none;
+	background: '#ae46ff';
+	border-radius: 60px;
 }
-
 
 @media screen and (max-width: 1024px) {
 	.principles__scroll-container {
-		grid-template-rows: repeat(3, 1fr);
+		grid-template-rows: 1fr;
 		grid-template-columns: 1fr;
-		max-width: 90%;
-		height: auto;
+		row-gap: 160px;
 		margin: 0 auto;
-		padding: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.principles__scroll-container {
+		row-gap: 60px;
 	}
 }
