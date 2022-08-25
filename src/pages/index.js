@@ -106,8 +106,6 @@ if (document.documentElement.clientWidth > 1024) {
 	})
 }
 
-
-
 // popup
 const courseReviewBtn = document.querySelector('.course__review-button');
 const courseReviewPopup = document.querySelector('.popup__course');
