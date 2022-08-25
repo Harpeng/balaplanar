@@ -1,40 +1,31 @@
 .principles__title {
 	position: absolute;
-	top: 12vh;
+	top: 16vh;
 	right: 0;
 	left: 0;
-	z-index: 22;
-	display: block;
+	z-index: 3;
+	max-width: 100%;
 	margin: 0;
-	padding: 0%;
 	color: white;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 3.6vh;
 	line-height: 1.22;
 	letter-spacing: -1px;
 	text-align: center;
 	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
-@media screen and (max-width: 1400px) {
-	.principles__title {
-		top: 7vh;
-		font-size: 3.6vh;
-	}
-}
-
 @media screen and (max-width: 1024px) {
 	.principles__title {
-		top: 16.13vw;
-		margin-right: auto;
-		margin-left: auto;
-		font-size: 4.03vw;
+		top: 160;
+		margin: 0 auto 0 auto;
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
 	.principles__title {
 		top: 30px;
+		max-width: 229px;
 		font-size: 24px;
 		line-height: 1.21;
 	}

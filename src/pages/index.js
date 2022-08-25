@@ -8,22 +8,104 @@ import { openPopup, closePopupByOverlayAndIcon } from '../components/popup';
 gsap.registerPlugin(ScrollTrigger);
 
 if (document.documentElement.clientWidth > 1024) {
+
+
 	gsap.to(scrollElements, {
+		xPercent: -100 * (scrollElements.length - 1),
 		ease: "none",
 		scrollTrigger: {
 			trigger: container,
 			pin: true,
 			pinType: 'fixed',
-			markers: true,
-			start: "top 80px",
-			scrub: true,
-			//	toggleClass: { className: 'principles__scroll-container_move', targets: container },
+			start: 'top top',
+			scrub: 0.5,
+			onToggle: () => {
+				if (innerWidth >= 1440) {
+					gsap.to(
+						container, {
+						ease: "none",
+						delay: 0,
+						duration: 0,
+						overflow: 'visible'
+					})
+					gsap.to(
+						scrollElements, {
+						ease: 'none',
+						delay: 0,
+						duration: 0,
+						backgroundColor: '#AE46FF',
+					})
+				}
+			},
+			onEnter: () => {
+				gsap.to('.header__scroll', {
+					scale: 0.95,
+					borderRadius: '66px',
+					ease: "none",
+					delay: 0,
+					duration: 0,
+				})
+				gsap.to(
+					[container, ...scrollElements], {
+					ease: 'none',
+					delay: 0,
+					duration: 0,
+					borderRadius: '0',
+				})
+			},
+			onEnterBack: () => {
+				gsap.to('.header__scroll', {
+					scale: 0.95,
+					borderRadius: '66px',
+					ease: "none",
+					delay: 0,
+					duration: 0,
+				})
+				gsap.to(
+					[container, ...scrollElements], {
+					ease: 'none',
+					delay: 0,
+					duration: 1,
+					borderRadius: '0',
+				})
+			},
+			onLeave: () => {
+				gsap.to('.header__scroll', {
+					scale: 1,
+					borderRadius: '',
+					ease: "none",
+					delay: 0,
+					duration: 0,
+				})
+				gsap.to(
+					[container, ...scrollElements], {
+					ease: 'none',
+					delay: 0,
+					duration: 1,
+					borderRadius: '60px',
+				})
+			},
+			onLeaveBack: () => {
+				gsap.to('.header__scroll', {
+					scale: 1,
+					borderRadius: '',
+					ease: "none",
+					delay: 0,
+					duration: 0,
+				})
+				gsap.to(
+					[container, ...scrollElements], {
+					ease: 'none',
+					delay: 0,
+					duration: 0,
+					borderRadius: '60px'
+				})
+			},
 			end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
-		},
-		xPercent: -100 * (scrollElements.length - 1),
+		}
 	})
 }
-console.log(innerWidth, innerHeight)
+
 // popup
 const courseReviewBtn = document.querySelector('.course__review-button');
 const courseReviewPopup = document.querySelector('.popup__course');

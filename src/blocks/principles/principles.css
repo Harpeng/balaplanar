@@ -1,9 +1,6 @@
 .principles {
 	position: relative;
-	width: 100vw;
-	max-width: 1440px;
-	height: unset;
-	overflow: hidden;
-	background: #ae46ff;
-	border-radius: 60px;
+	display: block;
+	width: 100%;
+	height: 100%;
 }

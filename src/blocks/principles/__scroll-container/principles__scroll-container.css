@@ -1,21 +1,27 @@
 .principles__scroll-container {
+	z-index: 2;
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: repeat(3, 100%);
-	box-sizing: border-box;
+	max-width: calc(100% * 3);
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 	list-style: none;
+	background: #ae46ff;
+	border-radius: 60px;
 }
 
 @media screen and (max-width: 1024px) {
 	.principles__scroll-container {
-		grid-template-rows: repeat(3, auto);
-		grid-template-columns: 100%;
-		width: 100%;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+		row-gap: 160px;
 		margin: 0 auto;
-		padding: 0;
-		column-gap: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.principles__scroll-container {
+		row-gap: 60px;
 	}
 }
