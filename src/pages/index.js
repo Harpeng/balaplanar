@@ -146,6 +146,13 @@ const buttonMenuStart = headerStart.querySelector('.header__menu');
 const buttonMenuScroll = headerScroll.querySelector('.header__menu');
 const headerMobile = document.querySelector('.header__mobile');
 const buttonExit = document.querySelector('.button-exit');
+const headerMobileLinks = headerMobile.querySelectorAll('.header__mobile-link');
+
+const menuCloseEsc = (evt) => {
+	if (evt.key == "Escape") {
+		closeMenuMobile();
+	};
+};
 
 
 let last_known_scroll_position = 0;
@@ -164,14 +171,33 @@ function addScrollListener() {
 }
 addScrollListener();
 
-buttonMenuStart.addEventListener('click', function (e) {
+buttonMenuStart.addEventListener('click', (e) => {
 	headerMobile.style.top = 0;
+	document.addEventListener('keydown', menuCloseEsc);
 })
 
-buttonMenuScroll.addEventListener('click', function (e) {
+buttonMenuScroll.addEventListener('click', (e) => {
 	headerMobile.style.top = 0;
+	document.addEventListener('keydown', menuCloseEsc);
 })
 
-buttonExit.addEventListener('click', function (e) {
+buttonExit.addEventListener('click', (e) => {
+	closeMenuMobile();
+})
+
+function closeMenuMobile() {
 	headerMobile.style.top = '-100%';
-})
+	document.removeEventListener('keydown', menuCloseEsc);
+}
+
+function addListenerToMobileLinks() {
+	headerMobileLinks.forEach(
+		function addListener(link) {
+			link.addEventListener('click', (e) => {
+				closeMenuMobile();
+			})
+		}
+	)
+}
+
+addListenerToMobileLinks();

@@ -7,6 +7,15 @@
 	background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1024px) {
+	.header__scroll-logo {
+		width: 137px;
+		height: 30px;
+		margin: 25px 0 25px 75px;
+		background-image: url(../../../images/logo_balapanlar_tablet.png);
+	}
+}
+
 @media screen and (max-width: 750px) {
 	.header__scroll-logo {
 		width: 101px;

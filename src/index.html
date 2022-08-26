@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page__smooth-scroll" >
 
 <head>
 	<meta charset="UTF-8" />
@@ -23,15 +23,15 @@
 			>
 			</button>
 
-					<div class="header__links-block">
-						<nav>
+
+					<nav class="header__links">
 							<ul class="header__links">
 								<li>
-									<a class="header__link" href="#">Наши курсы</a>
+								<a class="header__link" href="#ourСourses">Наши курсы</a>
 								</li>
 
 								<li>
-									<a class="header__link" href="#">О нас</a>
+								<a class="header__link" href="#aboutUs">О нас</a>
 								</li>
 
 								<li>
@@ -55,7 +55,7 @@
 							Записаться на курсы
 						</button>
 					</div>
-		</div>
+
 
 			<div class="header__scroll">
 				<div class="header__scroll-logo">
@@ -68,15 +68,14 @@
 			>
 			</button>
 
-				<div class="header__links-block">
-				<nav>
+			<nav class="header__links">
 					<ul class="header__links">
 						<li>
-							<a class="header__link" href="#">Наши курсы</a>
+						<a class="header__link" href="#ourСourses">Наши курсы</a>
 						</li>
 
 						<li>
-							<a class="header__link" href="#">О нас</a>
+						<a class="header__link" href="#aboutUs">О нас</a>
 						</li>
 
 						<li>
@@ -96,12 +95,11 @@
 				<button
 					type="button"
 					aria-label="кнопка Записаться на курсы"
-					class="button button__scroll-header"
+				class="button button_theme_black button__scroll-header"
 				>
 					Записаться на курсы
 				</button>
 			</div>
-		</div>
 
 			<div class="header__mobile">
 				<div class="header__mobile-block">
@@ -118,11 +116,11 @@
 				<nav>
 					<ul class="header__mobile-links">
 						<li>
-							<a class="header__mobile-link" href="#">Наши курсы</a>
+						<a class="header__mobile-link" href="#ourСourses">Наши курсы</a>
 						</li>
 
 						<li>
-							<a class="header__mobile-link" href="#">О нас</a>
+						<a class="header__mobile-link" href="#aboutUs">О нас</a>
 						</li>
 
 						<li>
@@ -142,7 +140,7 @@
 				<button
 					type="button"
 					aria-label="кнопка Записаться на курсы"
-					class="button button__mobile-header"
+				class="button button_theme_black button__mobile-header"
 				>
 					Записаться на курсы
 				</button>
@@ -155,8 +153,8 @@
 	<main class="content">
 		<section class="lead page__lead">
 			<div class="lead__image">
-				<h1 class="lead__title">Досуг и курсы для детей в аулах и сёлах</h1>
-				<button type="button" aria-label="кнопка Записаться на курсы" class="button button_lead">
+				<h1 class="lead__title">Досуг и курсы для детей в аулах и сёлах</h1>
+				<button type="button" aria-label="кнопка Записаться на курсы" class="button button__lead">
 					Записаться на курсы
 				</button>
 
@@ -170,7 +168,7 @@
 								Telegram канале
 							</p>
 						</div>
-						<button type="button" aria-label="кнопка Подписаться на телеграмм" class="button button_telegram">
+						<button type="button" aria-label="кнопка Подписаться на телеграмм" class="button button_theme_black button__telegram">
 							Подписаться
 						</button>
 					</div>
@@ -186,7 +184,7 @@
 			</p>
 		</section>
 		<section class="course">
-			<h2 class="course__title">Наши курсы</h2>
+					<h2 class="course__title" id="ourСourses">Наши курсы</h2>
 			<div class="course__programming course__programming_theme_yellow">
 				<h3 class="course__subtitle">Программирование</h3>
 				<p class="course__text">
@@ -467,7 +465,7 @@
 		</section>
 
 		<section class="about">
-			<h2 class="about__title">О нас</h2>
+					<h2 class="about__title" id="aboutUs">О нас</h2>
 
 			<p class="about__description">
 				Мы привозим лучшие практики неформального образования для тех,
