@@ -1,3 +1,10 @@
 .about__block {
 	margin: 0 auto;
 }
+
+/*
+@media screen and (min-width: 751px) and (max-width: 1024px) {
+	.about__block {
+		max-width: 595px;
+	}
+} */
