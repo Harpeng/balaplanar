@@ -1,0 +1,31 @@
+.principles__image {
+	height: 42vh;
+	margin: 24.4vh auto 0 auto;
+	padding: 0%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+	.principles__image {
+		width: 56.45vw;
+		height: 56.56vw;
+		margin-top: 0;
+	}
+
+	.principles__element:first-of-type > img {
+		margin-top: 237px;
+		border-radius: 500px;
+	}
+}
+
+
+@media screen and (max-width: 425px) {
+	.principles__image {
+		width: 71.87vw;
+		height: 71.87vw;
+	}
+
+	.principles__element:first-of-type > img {
+		margin-top: 89px;
+	}
+}

@@ -1,6 +1,6 @@
 root = true
 
-[src/{*.html,pages/*,blocks/**}]
+[src/{*.html,pages/index.css,blocks/**}]
 charset = utf-8
 indent_size = 2
 indent_style = tab

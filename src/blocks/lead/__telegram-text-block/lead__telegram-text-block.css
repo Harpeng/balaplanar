@@ -3,11 +3,21 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 10px;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 25px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
 	.lead__telegram-text-block {
-		display: none;
+		gap: 15px;
+		margin: 0 0 0 0;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.lead__telegram-text-block {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
 	}
 }
