@@ -11,3 +11,11 @@
 .course__description:first-of-type {
 	margin-bottom: 15px;
 }
+
+@media screen and (max-width: 750px) {
+	.course__description {
+		margin-right: 18px;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+}

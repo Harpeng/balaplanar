@@ -8,3 +8,9 @@
 .popup__quality-list:last-of-type {
 	margin-left: 20px;
 }
+
+@media screen and (max-width: 1220px) {
+	.popup__quality-list:last-of-type {
+		margin: 0;
+	}
+}
