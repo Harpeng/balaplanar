@@ -1,0 +1,5 @@
+@media screen and (max-width: 750px) {
+	.popup__review-button {
+		margin-top: 0;
+	}
+}

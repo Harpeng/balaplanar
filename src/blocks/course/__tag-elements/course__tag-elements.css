@@ -7,3 +7,10 @@
 	padding: 0;
 	list-style-type: none;
 }
+
+@media screen and (max-width: 750px) {
+	.course__tag-elements {
+		margin: 20px 0;
+		padding-right: 15px;
+	}
+}

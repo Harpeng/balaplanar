@@ -6,3 +6,12 @@
 	line-height: 1.22;
 	letter-spacing: -0.5px;
 }
+
+
+@media screen and (max-width: 750px) {
+	.course__options-text {
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: normal;
+	}
+}

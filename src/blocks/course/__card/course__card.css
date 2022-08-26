@@ -5,3 +5,16 @@
 	background-color: #ffffff;
 	border-radius: 60px;
 }
+
+@media screen and (max-width: 1220px) {
+	.course__card {
+		border-radius: 50px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.course__card {
+		padding: 15px 0 15px 15px;
+		border-radius: 30px;
+	}
+}
