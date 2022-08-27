@@ -2,9 +2,3 @@
 	border: 1px solid #000000;
 	border-radius: 50px;
 }
-
-@media screen and (max-width: 750px) {
-	.course__tag-element {
-		height: 100%;
-	}
-}

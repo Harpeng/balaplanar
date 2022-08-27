@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 		<title>Балапанлар</title>
 	</head>
 
@@ -189,6 +188,7 @@
 						знания в ауле, и стать успешным и счастливым взрослым.
 					</h2>
 				</section>
+
 				<section class="course">
 					<h2 class="course__title"  id="ourСourses">Наши курсы</h2>
 					<div class="course__programming course__programming_theme_yellow">
@@ -331,15 +331,12 @@
 								<button
 									type="button"
 									class="button button_theme_black course__button course__record-button"
-									onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScRkeum4swQ7Kyv1-04uBeVWIdb8AwhyJE2np9_wFp5ucp3qw/viewform';"
 								>
 									Записаться
 								</button>
 							</div>
 						</li>
-						<li
-							class="course__card course__card_size_small course__card_size_big"
-						>
+						<li class="course__card course__card_size_small course__card_size_big">
 							<h2 class="course__card-title">Английский язык</h2>
 							<ul class="course__options">
 								<li class="course__age">
@@ -376,7 +373,6 @@
 								<button
 									type="button"
 									class="button button_theme_black course__button course__record-button"
-									onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScRkeum4swQ7Kyv1-04uBeVWIdb8AwhyJE2np9_wFp5ucp3qw/viewform';"
 								>
 									Записаться
 								</button>
@@ -613,17 +609,17 @@
 				<section class="partners">
 						<h4 class="partners__title">Наши партнёры</h4>
 						<div class="partners__logos">
-							<div class="partners__logo partners__logo_clickable" id="partners__logo_lwb"><img
-									src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders"
-									class="partners__logo_lwb"></div>
-							<div class="partners__logo partners__logo_clickable" id="partners__logo_og"><img
-									src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>"
-									alt="благотворительный фонд открывая горизонты" class="partners__logo_og"></div>
-							<div class="partners__logo partners__logo_clickable" id="partners__logo_hb"><img
-									src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo_hb"></div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_lwb">
+								<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders">
+							</div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_og">
+								<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>" alt="благотворительный фонд открывая горизонты">
+							</div>
+							<div class="partners__logo partners__logo_clickable" id="partners__logo_hb">
+								<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио">
+							</div>
 						</div>
 				</section>
-
 
 			<section class="principles">
 				<div class="principles__scroll-container">
@@ -771,26 +767,25 @@
 						<button type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
 				</div>
-				<div class="popup popup__partners" id="partners__logo_lwb-popup">
+				<div class="popup" id="partners__logo_lwb-popup">
 					<div class="popup__container popup__container_block_column">
 						<div class="popup__logo-container">
-							<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders"
-								class="partners__logo_lwb">
+							<img src="<%=require('./images/logo_lecturers_without_borders.png')%>" alt="lecturers without borders">
 						</div>
 						<div class="popup__description">
 							<p class="popup__paragraph">
 								Lecturers Without Borders&nbsp;&mdash; сообщество молодых учёных со&nbsp;всего мира, которые проводят лекции и&nbsp;мастер-классы для школ. Среди лекторов много учёных из&nbsp;России. Для нас математики из&nbsp;Сорбонны проводили занятия по&nbsp;квази-кристаллам, а&nbsp;в&nbsp;будущем мы&nbsp;планируем привозить лекторов в&nbsp;наш центр.
 							</p>
 						</div>
-						<a aria-label="toPartner" type="button" class="button popup__btn-partner button_theme_black course__button" href="#" target="_blank">Сайт партнёра</a>
-						<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
+						<a class="button popup__btn-partner button_theme_black course__button" href="#" target="_blank">Сайт партнёра</a>
+						<button aria-label="Закрыть" type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
 				</div>
-				<div class="popup popup__partners" id="partners__logo_og-popup">
+				<div class="popup" id="partners__logo_og-popup">
 					<div class="popup__container popup__container_block_column">
 						<div class="popup__logo-container">
 							<img src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>"
-								alt="благотворительный фонд открывая горизонты" class="partners__logo_og">
+								alt="благотворительный фонд открывая горизонты">
 						</div>
 						<div class="popup__description">
 							<p class="popup__paragraph">
@@ -800,25 +795,25 @@
 								Совместно проводим программу профориентации &laquo;Поколение Выбор&raquo;. В&nbsp;2021&ndash;2022&nbsp;в ней приняли участие 35&nbsp;подростков из&nbsp;2&nbsp;школ аула Икон-Халк и&nbsp;посёлка Эркен-Шахар. В&nbsp;сезоне 2022&ndash;2023 планируются ещё две школы.
 							</p>
 						</div>
-						<a aria-label="toPartner" type="button" class="button popup__btn-partner button_theme_black course__button" href="https://xn----7sbfgufj4abfcqfum7kl6d.xn--p1ai/" target="_blank">Сайт партнёра</a>
-						<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
+						<a class="button popup__btn-partner button_theme_black course__button" href="https://xn----7sbfgufj4abfcqfum7kl6d.xn--p1ai/" target="_blank">Сайт партнёра</a>
+						<button aria-label="Закрыть" type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
 				</div>
-				<div class="popup popup__partners" id="partners__logo_hb-popup">
+				<div class="popup" id="partners__logo_hb-popup">
 					<div class="popup__container popup__container_block_column">
 						<div class="popup__logo-container">
-							<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио" class="partners__logo_hb">
+							<img src="<%=require('./images/logo_hymbio.png')%>" alt="химбио">
 						</div>
 						<div class="popup__description">
 							<p class="popup__paragraph">
 								ХимБио&nbsp;&mdash; онлайн-школа и&nbsp;выездные программы для детей и&nbsp;подростков со&nbsp;всего мира! Занимаются здесь химией, биологией и&nbsp;физикой, много практики и&nbsp;опытов. Летом детей и&nbsp;подростков ждут экспедиции, а&nbsp;во&nbsp;время учебного года&nbsp;&mdash; курсы по&nbsp;самым разным направлениям.
 							</p>
 						</div>
-						<a aria-label="toPartner" class="button popup__btn-partner button_theme_black course__button" href="https://himbio4you.ru/" target="_blank">Сайт партнёра</a>
-						<button aria-label="Close" type="button" class="popup__close-button popup__close-icon"></button>
+						<a class="button popup__btn-partner button_theme_black course__button" href="https://himbio4you.ru/" target="_blank">Сайт партнёра</a>
+						<button aria-label="Закрыть" type="button" class="popup__close-button popup__close-icon"></button>
 					</div>
 				</div>
 			</main>
-			</div>
-		</body>
-		</html>
+		</div>
+	</body>
+</html>
