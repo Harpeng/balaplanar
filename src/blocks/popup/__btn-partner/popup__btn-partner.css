@@ -1,6 +1,5 @@
 .popup__btn-partner {
 	text-decoration: none;
-	cursor: pointer;
 }
 
 @media screen and (max-width: 350px) {

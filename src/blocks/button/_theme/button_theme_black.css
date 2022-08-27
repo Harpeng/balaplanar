@@ -4,6 +4,5 @@
 
 .button_theme_black:hover {
 	background-color: #333333;
-	cursor: pointer;
 	transition: 0.3s linear;
 }
