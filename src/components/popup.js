@@ -1,8 +1,10 @@
-import { modalConfig } from './constants';
+import { modalConfig } from '../utils/constants.js';
 export {
   openPopup,
   closePopupByOverlayAndIcon
 };
+
+const bodyElem = document.querySelector(modalConfig.popupPageBodySelector);
 
 const closePopupByEsc = (evt) => {
   if (evt.key === 'Escape') {
@@ -16,6 +18,7 @@ const closePopupByEsc = (evt) => {
 function openPopup(popup) {
   popup.classList.add(modalConfig.activeModalClass);
   document.addEventListener('keydown', closePopupByEsc);
+  bodyElem.style.overflow = "hidden";
 }
 
 function closePopup(popup) {
@@ -28,5 +31,6 @@ function closePopupByOverlayAndIcon (evt) {
     evt.target.classList.contains(modalConfig.activeModalClass)) 
       { 
         closePopup(evt.target.closest(modalConfig.modalSelector));
+        bodyElem.style.overflow = "visible";
       }
 }
