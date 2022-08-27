@@ -1,0 +1,24 @@
+.principles__grid-container {
+	z-index: 2;
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	max-width: calc(100% * 3);
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.principles__grid-container {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+		row-gap: 160px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.principles__grid-container {
+		row-gap: 60px;
+	}
+}
