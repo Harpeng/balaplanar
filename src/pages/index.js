@@ -186,7 +186,7 @@ buttonExit.addEventListener('click', (e) => {
 })
 
 function closeMenuMobile() {
-	headerMobile.style.top = '-100%';
+	headerMobile.style.top = `-${headerMobile.scrollHeight}px`;
 	document.removeEventListener('keydown', menuCloseEsc);
 }
 
@@ -201,3 +201,13 @@ function addListenerToMobileLinks() {
 }
 
 addListenerToMobileLinks();
+
+function autoHideHeaderMobile() {
+	window.addEventListener('resize', (e) => {
+		if(headerMobile.style.top !== 0) {
+			headerMobile.style.top = `-${headerMobile.scrollHeight}px`;
+		}
+	});
+}
+
+autoHideHeaderMobile();
