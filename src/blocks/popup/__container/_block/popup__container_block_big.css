@@ -8,9 +8,16 @@
 @media screen and (max-width: 1220px) {
 	.popup__container_block_big {
 		max-width: 594px;
-		height: 100%;
+		max-height: 91vh;
+		overflow: scroll;
 		background-position: center;
 		border-radius: 50px;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.popup__container_block_big::-webkit-scrollbar {
+		display: none;
 	}
 }
 
