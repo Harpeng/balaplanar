@@ -1,23 +1,15 @@
 .popup__container_block_big {
 	width: 100%;
 	max-width: 1200px;
-	height: 100%;
+	margin-top: 50px;
 	padding: 30px 0 30px 30px;
+	background-position: center;
+	border-radius: 50px;
 }
 
 @media screen and (max-width: 1220px) {
 	.popup__container_block_big {
 		max-width: 594px;
-		max-height: 91vh;
-		overflow: scroll;
-		background-position: center;
-		border-radius: 50px;
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-
-	.popup__container_block_big::-webkit-scrollbar {
-		display: none;
 	}
 }
 
