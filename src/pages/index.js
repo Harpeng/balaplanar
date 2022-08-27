@@ -1,14 +1,12 @@
 import './index.css';
-import { container, scrollElements, scrollElement } from '../utils/constants.js'
+import { container, scrollElements, scrollElement, modalConfig } from '../utils/constants.js'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { modalConfig } from '../components/constants';
 import { openPopup, closePopupByOverlayAndIcon } from '../components/popup';
 
 gsap.registerPlugin(ScrollTrigger);
 
 if (document.documentElement.clientWidth > 1024) {
-
 
 	gsap.to(scrollElements, {
 		xPercent: -100 * (scrollElements.length - 1),
@@ -118,14 +116,15 @@ const partnerLwbPopup = document.querySelector('#partners__logo_lwb-popup');
 const partnerOgPopup = document.querySelector('#partners__logo_og-popup');
 const partnerHbPopup = document.querySelector('#partners__logo_hb-popup');
 
-
 partnerLwbLogo.addEventListener('click', () => { openPopup(partnerLwbPopup) });
 partnerOgLogo.addEventListener('click', () => { openPopup(partnerOgPopup) });
 partnerHbLogo.addEventListener('click', () => { openPopup(partnerHbPopup) });
 
 const popups = document.querySelectorAll(modalConfig.modalSelector);
 
-courseReviewBtn.addEventListener('click', () => openPopup(courseReviewPopup));
+courseReviewBtn.addEventListener('click', () => {
+		openPopup(courseReviewPopup);
+	});
 
 popups.forEach((popup) => {
 	popup.addEventListener('click', closePopupByOverlayAndIcon);
@@ -137,6 +136,7 @@ window.addEventListener('wheel', (e) => {
 		return false
 	}
 }, { passive: false })
+
 
 // header menu
 

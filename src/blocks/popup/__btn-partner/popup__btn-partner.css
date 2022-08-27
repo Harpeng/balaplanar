@@ -1,12 +1,10 @@
 .popup__btn-partner {
-	width: 342px;
-	height: 64px;
-	margin: 0 auto;
-	color: white;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 1.2;
-	background-color: black;
-	border-radius: 50px;
+	text-decoration: none;
 	cursor: pointer;
+}
+
+@media screen and (max-width: 350px) {
+	.popup__btn-partner {
+		align-self: flex-start;
+	}
 }
