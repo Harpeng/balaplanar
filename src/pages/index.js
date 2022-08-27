@@ -127,10 +127,7 @@ courseReviewBtn.addEventListener('click', () => {
 	});
 
 popups.forEach((popup) => {
-	popup.addEventListener('click', function () {
-		closePopupByOverlayAndIcon;
-
-	});
+	popup.addEventListener('click', closePopupByOverlayAndIcon);
 });
 
 window.addEventListener('wheel', (e) => {

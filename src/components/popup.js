@@ -11,6 +11,7 @@ const closePopupByEsc = (evt) => {
     const activePopup = document.querySelector(modalConfig.activeModalSelector);
     if (activePopup) {
       closePopup(activePopup);
+      bodyElem.classList.toggle(modalConfig.pageUnscrollClass);
     }
   }
 }
@@ -18,7 +19,7 @@ const closePopupByEsc = (evt) => {
 function openPopup(popup) {
   popup.classList.add(modalConfig.activeModalClass);
   document.addEventListener('keydown', closePopupByEsc);
-  bodyElem.style.overflow = "hidden";
+  bodyElem.classList.toggle(modalConfig.pageUnscrollClass);
 }
 
 function closePopup(popup) {
@@ -31,6 +32,6 @@ function closePopupByOverlayAndIcon (evt) {
     evt.target.classList.contains(modalConfig.activeModalClass)) 
       { 
         closePopup(evt.target.closest(modalConfig.modalSelector));
-        bodyElem.style.overflow = "visible";
+        bodyElem.classList.toggle(modalConfig.pageUnscrollClass);
       }
 }

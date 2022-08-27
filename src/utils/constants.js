@@ -7,7 +7,8 @@ const modalConfig = {
   closeBtnSelector: 'popup__close-button',
   activeModalClass: 'popup_is-opened',
   activeModalSelector: '.popup_is-opened',
-  popupPageBodySelector: '.page'
+  popupPageBodySelector: '.page',
+  pageUnscrollClass: 'page__unscrollable'
 }
 
 export { container, scrollElements, scrollElement, modalConfig }
