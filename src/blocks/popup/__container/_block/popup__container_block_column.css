@@ -4,3 +4,11 @@
 	max-width: 885px;
 	padding: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+	.popup__container_block_column {
+		gap: 30px;
+		max-width: 80%;
+		padding: 30px;
+	}
+}
