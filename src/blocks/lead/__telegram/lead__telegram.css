@@ -21,8 +21,26 @@
 	}
 }
 
+@media screen and (max-width: 520px) {
+	.lead__telegram {
+		height: 100px;
+	}
+}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
+	.lead__telegram {
+		height: 120px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.lead__telegram {
+		height: 150px;
+	}
+}
+
+
+@media screen and (max-width: 350px) {
 	.lead__telegram {
 		flex-direction: column;
 		gap: 0;

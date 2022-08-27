@@ -18,8 +18,7 @@
 
 @media screen and (max-width: 1024px) {
 	.lead__image {
-		height: 100vh;
-		background: url(../../../images/lead_image-tablet.svg);
+		background: url(../../../images/lead_image.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		border-radius: 50px;
@@ -28,13 +27,14 @@
 
 @media screen and (max-width: 750px) {
 	.lead__image {
+		height: 100vh;
 		background: url(../../../images/lead_image-tablet.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
 	.lead__image {
 		height: 800px;
 		background: url(../../../images/lead_image-mobile.svg);

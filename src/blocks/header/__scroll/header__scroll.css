@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 350px) {
 	.header__scroll {
 		height: 42px;
 	}
