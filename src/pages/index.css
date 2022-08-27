@@ -100,6 +100,7 @@
 @import url(../blocks/popup/__quality/popup__quality.css);
 @import url(../blocks/popup/__button-course/popup__button-course.css);
 @import url(../blocks/popup/__review-button/popup__review-button.css);
+@import url(../blocks/popup/__logo-container/popup__logo-container.css);
 @import url(../blocks/popup/__close-icon/popup__close-icon.css);
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__title/about__title.css);
