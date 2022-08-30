@@ -8,5 +8,6 @@
 	.about__container {
 		grid-template-columns: repeat(1, minmax(291px, 1fr));
 		max-width: 595px;
+		margin: 0 auto;
 	}
 }
