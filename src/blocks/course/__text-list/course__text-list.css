@@ -1,6 +1,6 @@
 .course__text-list {
 	padding: 0 0 0 30px;
-	list-style-image: url(../../../images/checkMark.svg);
+	list-style-image: url(../../../images/icon_check.svg);
 }
 
 @media screen and (max-width: 1024px) {
