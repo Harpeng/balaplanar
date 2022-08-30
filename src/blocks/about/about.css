@@ -1,7 +1,7 @@
 .about {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 120px 120px 90px;
+	padding: 120px 120px 80px;
 	background-color: #ffffff;
 	border-radius: 60px 60px 0 0;
 }
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
 	.about {
-		padding: 30px 10px 30px;
+		padding: 30px 15px 30px;
 		border-radius: 0;
 	}
 }

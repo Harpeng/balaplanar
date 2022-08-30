@@ -112,7 +112,7 @@
 @import url(../blocks/about/__block/about__block.css);
 @import url(../blocks/about/__image/about__image.css);
 @import url(../blocks/about/__block-description/about__block-description.css);
-@import url(../blocks/about/__block-description/_second/about__block-description_second.css);
+@import url(../blocks/about/__block-description/_margin-right/about__block-description_margin-right.css);
 @import url(../blocks/about/__school-list/about__school-list.css);
 @import url(../blocks/about/__option/about__option.css);
 @import url(../blocks/about/__address-icon/about__address-icon.css);
