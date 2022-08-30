@@ -4,7 +4,7 @@
 	cursor: pointer;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 750px){
 	.partners__logo {
 		display: flex;
 		justify-content: center;
