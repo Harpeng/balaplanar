@@ -17,7 +17,6 @@
 	.popup__container_block_big {
 		max-width: 300px;
 		padding: 15px;
-		background-position: center;
 		border-radius: 30px;
 	}
 }
