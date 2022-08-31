@@ -13,7 +13,6 @@
 
 .button__lead:hover {
 	background-color: #ff8540;
-	cursor: pointer;
 	transition: 0.3s linear;
 }
 

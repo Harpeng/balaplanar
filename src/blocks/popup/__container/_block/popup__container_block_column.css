@@ -15,7 +15,7 @@
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 350px) {
 	.popup__container_block_column {
 		top: 50px;
 		max-width: 92%;

@@ -55,6 +55,7 @@
 @import url(../blocks/course/__other-programm/course__other-programm.css);
 @import url(../blocks/course/__card/course__card.css);
 @import url(../blocks/course/__card-title/course__card-title.css);
+@import url(../blocks/course/__card-title/_wrapper/course__card-title_wrapper_grid.css);
 @import url(../blocks/course/__card/_size/course__card_size_small.css);
 @import url(../blocks/course/__card/_size/course__card_size_big.css);
 @import url(../blocks/course/__options/course__options.css);
@@ -76,7 +77,6 @@
 @import url(../blocks/course/__record-button/course__record-button.css);
 @import url(../blocks/course/__review-button/course__review-button.css);
 @import url(../blocks/course/__price-block/course__price-block.css);
-@import url(../blocks/course/__title/_wrapper/course__title_wrapper_grid.css);
 @import url(../blocks/course/__pay-button/course__pay-button.css);
 @import url(../blocks/course/__block-list/course__block-list.css);
 @import url(../blocks/course/__quality-block/_condition/course__quality-block_condition_benefit.css);
@@ -95,6 +95,7 @@
 @import url(../blocks/popup/__options/popup__options.css);
 @import url(../blocks/popup/__tag-elements/popup__tag-elements.css);
 @import url(../blocks/popup/__description/popup__description.css);
+@import url(../blocks/popup/__description-list/popup__description-list.css);
 @import url(../blocks/popup/__paragraph/popup__paragraph.css);
 @import url(../blocks/popup/__quality-block/popup__quality-block.css);
 @import url(../blocks/popup/__quality-list/popup__quality-list.css);
@@ -111,7 +112,7 @@
 @import url(../blocks/about/__block/about__block.css);
 @import url(../blocks/about/__image/about__image.css);
 @import url(../blocks/about/__block-description/about__block-description.css);
-@import url(../blocks/about/__block-description/_second/about__block-description_second.css);
+@import url(../blocks/about/__block-description/_margin-right/about__block-description_margin-right.css);
 @import url(../blocks/about/__school-list/about__school-list.css);
 @import url(../blocks/about/__option/about__option.css);
 @import url(../blocks/about/__address-icon/about__address-icon.css);
