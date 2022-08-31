@@ -124,7 +124,7 @@ mMedia.add('(min-width: 1025px)'
 
 // popup
 const courseReviewBtn = document.querySelector('.course__review-button');
-const courseReviewPopup = document.querySelector('.popup__course');
+const courseReviewPopup = document.querySelector('.popup.course');
 
 const partnerLwbLogo = document.querySelector('#partners__logo_lwb');
 const partnerOgLogo = document.querySelector('#partners__logo_og');
