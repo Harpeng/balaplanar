@@ -11,7 +11,7 @@
 	border-radius: 60px;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 750px){
 	.partners__logos {
 		grid-template-columns: repeat(auto-fill, 290px);
 		gap: 10px;

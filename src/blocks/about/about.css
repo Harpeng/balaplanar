@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 751px) and (max-width: 1024px) {
 	.about {
-		padding: 80px 75px 60px;
+		padding: 80px 75px 100px;
 		border-radius: 50px 50px 0 0;
 	}
 }
