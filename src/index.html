@@ -663,6 +663,45 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="principles">
+					<div class="principles__scroll-container">
+						<h4 class="principles__title">Наши принципы</h4>
+						<ul class="principles__grid-container">
+							<li class="principles__element">
+								<img
+									class="principles__image"
+									src="<%=require('./images/princeples__first-image.png')%>"
+									alt="Актуальные знания и навыки"
+								/>
+								<h2 class="principles__description">
+									Актуальные знания и навыки
+								</h2>
+							</li>
+							<li class="principles__element">
+								<img
+									class="principles__image"
+									src="<%=require('./images/princeples__second-image.png')%>"
+									alt="Равный доступ к образованию"
+								/>
+								<h2 class="principles__description">
+									Равный доступ к образованию
+								</h2>
+							</li>
+							<li class="principles__element">
+								<img
+									class="principles__image"
+									src="<%=require('./images/princeples__third-image.png')%>"
+									alt="Инвестируем в развитие местных специалистов и экпертов"
+								/>
+								<h2 class="principles__description">
+									Инвестируем в развитие местных специалистов и экпертов
+								</h2>
+							</li>
+						</ul>
+					</div>
+				</section>
+
 				<div class="popup course">
 					<div class="popup__container popup__container_block_big">
 						<h2 class="course__card-title">Python Start</h2>
@@ -808,28 +847,31 @@
 							class="popup__close-button popup__close-icon"
 						></button>
 					</div>
-				</div>
-				<div class="popup" id="partners__logo_lwb-popup">
+				<div class="popup" id="partners__logo_og-popup">
 					<div class="popup__container popup__container_block_column">
 						<div class="popup__logo-container">
 							<img
-								src="<%=require('./images/logo_lecturers_without_borders.png')%>"
-								alt="Лекторы без границ"
+								src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>"
+								alt="благотворительный фонд Открывая горизонты"
 							/>
 						</div>
 						<div class="popup__description">
 							<p class="popup__paragraph">
-								Lecturers Without Borders&nbsp;&mdash; сообщество молодых учёных
-								со&nbsp;всего мира, которые проводят лекции и&nbsp;мастер-классы
-								для школ. Среди лекторов много учёных из&nbsp;России. Для нас
-								математики из&nbsp;Сорбонны проводили занятия
-								по&nbsp;квази-кристаллам, а&nbsp;в&nbsp;будущем
-								мы&nbsp;планируем привозить лекторов в&nbsp;наш центр.
+								Фонд работает в&nbsp;45&nbsp;регионах и&nbsp;с&nbsp;осени
+								2021&nbsp;мы их&nbsp;единственные партнёры
+								в&nbsp;Карачаево-Черкесии.
+							</p>
+							<p class="popup__paragraph">
+								Совместно проводим программу профориентации &laquo;Поколение
+								Выбор&raquo;. В&nbsp;2021&ndash;2022&nbsp;в ней приняли участие
+								35&nbsp;подростков из&nbsp;2&nbsp;школ аула Икон-Халк
+								и&nbsp;посёлка Эркен-Шахар. В&nbsp;сезоне 2022&ndash;2023
+								планируются ещё две школы.
 							</p>
 						</div>
 						<a
 							class="button popup__btn-partner button_theme_black course__button"
-							href="#"
+							href="https://xn----7sbfgufj4abfcqfum7kl6d.xn--p1ai/"
 							target="_blank"
 							>Сайт партнёра</a
 						>
@@ -840,98 +882,35 @@
 						></button>
 					</div>
 				</div>
-				<div class="popup popup__partners">
-					<img
-						src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>"
-						alt="благотворительный фонд открывая горизонты"
-						class="partners__logo partners__logo_og"
-					/>
-					<p class="popup__description">
-						Фонд работает в 45 регионах и с осени 2021 мы их единственные
-						партнёры в Карачаево-Черкесии. Совместно проводим программу
-						профориентации «Поколение Выбор». В 2021–2022 в ней приняли участие
-						35 подростков из 2 школ аула Икон-Халк и посёлка Эркен-Шахар.
-						В сезоне 2022–2023 планируются ещё две школы.
-					</p>
-
-					<button
-						aria-label="toPartner"
-						type="button"
-						class="popup__btn-partner"
-					>
-						Перейти на сайт партнёра
-					</button>
-
-					<button
-						aria-label="Close"
-						type="button"
-						class="popup__close-button"
-					></button>
-					<div class="popup" id="partners__logo_og-popup">
-						<div class="popup__container popup__container_block_column">
-							<div class="popup__logo-container">
-								<img
-									src="<%=require('./images/logo_otkryvaya_gorizonty.png')%>"
-									alt="благотворительный фонд Открывая горизонты"
-								/>
-							</div>
-							<div class="popup__description">
-								<p class="popup__paragraph">
-									Фонд работает в&nbsp;45&nbsp;регионах и&nbsp;с&nbsp;осени
-									2021&nbsp;мы их&nbsp;единственные партнёры
-									в&nbsp;Карачаево-Черкесии.
-								</p>
-								<p class="popup__paragraph">
-									Совместно проводим программу профориентации &laquo;Поколение
-									Выбор&raquo;. В&nbsp;2021&ndash;2022&nbsp;в ней приняли
-									участие 35&nbsp;подростков из&nbsp;2&nbsp;школ аула Икон-Халк
-									и&nbsp;посёлка Эркен-Шахар. В&nbsp;сезоне 2022&ndash;2023
-									планируются ещё две школы.
-								</p>
-							</div>
-							<a
-								class="button popup__btn-partner button_theme_black course__button"
-								href="https://xn----7sbfgufj4abfcqfum7kl6d.xn--p1ai/"
-								target="_blank"
-								>Сайт партнёра</a
-							>
-							<button
-								aria-label="Закрыть"
-								type="button"
-								class="popup__close-button popup__close-icon"
-							></button>
+				<div class="popup" id="partners__logo_hb-popup">
+					<div class="popup__container popup__container_block_column">
+						<div class="popup__logo-container">
+							<img
+								src="<%=require('./images/logo_hymbio.png')%>"
+								alt="Химбио"
+							/>
 						</div>
-					</div>
-					<div class="popup" id="partners__logo_hb-popup">
-						<div class="popup__container popup__container_block_column">
-							<div class="popup__logo-container">
-								<img
-									src="<%=require('./images/logo_hymbio.png')%>"
-									alt="Химбио"
-								/>
-							</div>
-							<div class="popup__description">
-								<p class="popup__paragraph">
-									ХимБио&nbsp;&mdash; онлайн-школа и&nbsp;выездные программы для
-									детей и&nbsp;подростков со&nbsp;всего мира! Занимаются здесь
-									химией, биологией и&nbsp;физикой, много практики
-									и&nbsp;опытов. Летом детей и&nbsp;подростков ждут экспедиции,
-									а&nbsp;во&nbsp;время учебного года&nbsp;&mdash; курсы
-									по&nbsp;самым разным направлениям.
-								</p>
-							</div>
-							<a
-								class="button popup__btn-partner button_theme_black course__button"
-								href="https://himbio4you.ru/"
-								target="_blank"
-								>Сайт партнёра</a
-							>
-							<button
-								aria-label="Закрыть"
-								type="button"
-								class="popup__close-button popup__close-icon"
-							></button>
+						<div class="popup__description">
+							<p class="popup__paragraph">
+								ХимБио&nbsp;&mdash; онлайн-школа и&nbsp;выездные программы для
+								детей и&nbsp;подростков со&nbsp;всего мира! Занимаются здесь
+								химией, биологией и&nbsp;физикой, много практики и&nbsp;опытов.
+								Летом детей и&nbsp;подростков ждут экспедиции,
+								а&nbsp;во&nbsp;время учебного года&nbsp;&mdash; курсы
+								по&nbsp;самым разным направлениям.
+							</p>
 						</div>
+						<a
+							class="button popup__btn-partner button_theme_black course__button"
+							href="https://himbio4you.ru/"
+							target="_blank"
+							>Сайт партнёра</a
+						>
+						<button
+							aria-label="Закрыть"
+							type="button"
+							class="popup__close-button popup__close-icon"
+						></button>
 					</div>
 				</div>
 			</main>
