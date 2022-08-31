@@ -6,103 +6,121 @@ import { openPopup, closePopupByOverlayAndIcon } from '../components/popup';
 
 gsap.registerPlugin(ScrollTrigger);
 
-if (document.documentElement.clientWidth > 1024) {
-
-	gsap.to(scrollElements, {
-		xPercent: -100 * (scrollElements.length - 1),
-		ease: "none",
-		scrollTrigger: {
-			trigger: container,
-			pin: true,
-			pinType: 'fixed',
-			start: 'top top',
-			scrub: 0.5,
-			onToggle: () => {
-				if (innerWidth >= 1440) {
-					gsap.to(
-						container, {
+const mMedia = gsap.matchMedia()
+mMedia.add('(min-width: 1025px)'
+	, () => {
+		gsap.to(scrollElements, {
+			xPercent: -100 * (scrollElements.length - 1),
+			ease: "none",
+			scrollTrigger: {
+				trigger: '.principles',
+				pin: true,
+				pinType: 'fixed',
+				start: 'top top',
+				scrub: 0.5,
+				onToggle: () => {
+					if (innerWidth >= 1440) {
+						gsap.to(
+							container, {
+							ease: "none",
+							delay: 0,
+							duration: 0,
+							overflow: 'visible'
+						})
+						gsap.to(
+							scrollElements, {
+							ease: 'none',
+							delay: 0,
+							duration: 0,
+							backgroundColor: '#AE46FF',
+						})
+					}
+				},
+				onEnter: () => {
+					gsap.to('.header__scroll', {
+						scale: 0.95,
+						borderRadius: '66px',
 						ease: "none",
-						delay: 0,
-						duration: 0,
-						overflow: 'visible'
+						delay: 0.01,
+						duration: 0.01,
 					})
 					gsap.to(
-						scrollElements, {
+						'.principles__background', {
 						ease: 'none',
 						delay: 0,
 						duration: 0,
-						backgroundColor: '#AE46FF',
+						borderRadius: '0',
 					})
-				}
-			},
-			onEnter: () => {
-				gsap.to('.header__scroll', {
-					scale: 0.95,
-					borderRadius: '66px',
-					ease: "none",
-					delay: 0,
-					duration: 0,
-				})
-				gsap.to(
-					[container, ...scrollElements], {
-					ease: 'none',
-					delay: 0,
-					duration: 0,
-					borderRadius: '0',
-				})
-			},
-			onEnterBack: () => {
-				gsap.to('.header__scroll', {
-					scale: 0.95,
-					borderRadius: '66px',
-					ease: "none",
-					delay: 0,
-					duration: 0,
-				})
-				gsap.to(
-					[container, ...scrollElements], {
-					ease: 'none',
-					delay: 0,
-					duration: 1,
-					borderRadius: '0',
-				})
-			},
-			onLeave: () => {
-				gsap.to('.header__scroll', {
-					scale: 1,
-					borderRadius: '',
-					ease: "none",
-					delay: 0,
-					duration: 0,
-				})
-				gsap.to(
-					[container, ...scrollElements], {
-					ease: 'none',
-					delay: 0,
-					duration: 1,
-					borderRadius: '60px',
-				})
-			},
-			onLeaveBack: () => {
-				gsap.to('.header__scroll', {
-					scale: 1,
-					borderRadius: '',
-					ease: "none",
-					delay: 0,
-					duration: 0,
-				})
-				gsap.to(
-					[container, ...scrollElements], {
-					ease: 'none',
-					delay: 0,
-					duration: 0,
-					borderRadius: '60px'
-				})
-			},
-			end: () => `+=${container.offsetHeight * (scrollElements.length - 1)}`
-		}
-	})
-}
+				},
+				onEnterBack: () => {
+					gsap.to('.header__scroll', {
+						scale: 0.95,
+						borderRadius: '66px',
+						ease: "none",
+						delay: 0.01,
+						duration: 0.01,
+					})
+					gsap.to(
+						'.principles__background', {
+						ease: 'none',
+						delay: 0,
+						duration: 1,
+						borderRadius: '0',
+					})
+				},
+				onLeave: () => {
+					gsap.to('.header__scroll', {
+						scale: 1,
+						borderRadius: '',
+						ease: "none",
+						delay: 0.01,
+						duration: 0.01,
+					})
+					gsap.to(
+						'.principles__background', {
+						ease: 'none',
+						delay: 0,
+						duration: 1,
+						borderRadius: '60px',
+					})
+
+					gsap.to(
+						container, {
+						ease: 'none',
+						delay: 0,
+						duration: 0.1,
+						overflow: 'hidden'
+					})
+				},
+				onLeaveBack: () => {
+					gsap.to('.header__scroll', {
+						scale: 1,
+						borderRadius: '',
+						ease: "none",
+						delay: 0.01,
+						duration: 0.01,
+					})
+					gsap.to(
+						'.principles__background', {
+						ease: 'none',
+						delay: 0,
+						duration: 0,
+						borderRadius: '60px'
+					})
+					gsap.to(
+						container, {
+						ease: 'none',
+						delay: 0,
+						duration: 0.1,
+						overflow: 'hidden'
+					})
+				},
+				end: () => `+=${container.offsetWidth * (scrollElements.length - 1)}`
+			}
+		})
+	}
+)
+
 
 // popup
 const courseReviewBtn = document.querySelector('.course__review-button');
@@ -123,8 +141,8 @@ partnerHbLogo.addEventListener('click', () => { openPopup(partnerHbPopup) });
 const popups = document.querySelectorAll(modalConfig.modalSelector);
 
 courseReviewBtn.addEventListener('click', () => {
-		openPopup(courseReviewPopup);
-	});
+	openPopup(courseReviewPopup);
+});
 
 popups.forEach((popup) => {
 	popup.addEventListener('click', closePopupByOverlayAndIcon);
@@ -204,7 +222,7 @@ addListenerToMobileLinks();
 
 function autoHideHeaderMobile() {
 	window.addEventListener('resize', (e) => {
-		if(headerMobile.style.top !== 0) {
+		if (headerMobile.style.top !== 0) {
 			headerMobile.style.top = `-${headerMobile.scrollHeight}px`;
 		}
 	});
