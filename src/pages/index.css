@@ -12,7 +12,6 @@
 @import url(../blocks/button/_theme/button_theme_orange.css);
 @import url(../blocks/button/_theme/button_theme_black.css);
 @import url(../blocks/button/__lead/button__lead.css);
-@import url(../blocks/button/__telegram/button__telegram.css);
 @import url(../blocks/button-exit/button-exit.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__start/header__start.css);
@@ -38,6 +37,7 @@
 @import url(../blocks/lead/__caption/lead__caption.css);
 @import url(../blocks/lead/__telegram-text-block/lead__telegram-text-block.css);
 @import url(../blocks/lead/__telegram-logo/lead__telegram-logo.css);
+@import url(../blocks/lead/__telegram-button/lead__telegram-button.css);
 @import url(../blocks/lead/__container-telegram/lead__container-telegram.css);
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__text/intro__text.css);
