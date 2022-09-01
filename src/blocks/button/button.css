@@ -1,5 +1,6 @@
 .button {
 	box-sizing: border-box;
+	max-width: 100%;
 	font-weight: 600;
 	text-align: center;
 	text-decoration: none;
