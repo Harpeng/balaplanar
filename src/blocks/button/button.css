@@ -6,8 +6,9 @@
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
+	font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .button:hover {
-	cursor: pointer;
+	transition: 0.3s linear;
 }
