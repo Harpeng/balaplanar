@@ -11,7 +11,6 @@
 @import url(../blocks/button/_size/button_size_l.css);
 @import url(../blocks/button/_theme/button_theme_orange.css);
 @import url(../blocks/button/_theme/button_theme_black.css);
-@import url(../blocks/button/__scroll-header/button__scroll-header.css);
 @import url(../blocks/button/__mobile-header/button__mobile-header.css);
 @import url(../blocks/button/__lead/button__lead.css);
 @import url(../blocks/button/__telegram/button__telegram.css);
@@ -20,6 +19,7 @@
 @import url(../blocks/header/__start/header__start.css);
 @import url(../blocks/header/__scroll/header__scroll.css);
 @import url(../blocks/header/__scroll-logo/header__scroll-logo.css);
+@import url(../blocks/header/__scroll-button/header__scroll-button.css);
 @import url(../blocks/header/__mobile/header__mobile.css);
 @import url(../blocks/header/__mobile-links-block/header__mobile-links-block.css);
 @import url(../blocks/header/__mobile-links/header__mobile-links.css);
