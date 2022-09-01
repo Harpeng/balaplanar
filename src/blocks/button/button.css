@@ -1,8 +1,8 @@
 .button {
 	box-sizing: border-box;
-	color: white;
 	font-weight: 600;
 	text-align: center;
+	text-decoration: none;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
