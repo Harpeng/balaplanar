@@ -1,4 +1,4 @@
-.button__header {
+.header__button {
 	max-width: 224px;
 	margin: 34px 20px 34px 0;
 	padding: 16px 22px 16px 22px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.button__header {
+	.header__button {
 		display: none;
 	}
 }

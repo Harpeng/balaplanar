@@ -25,3 +25,52 @@
 		margin: 6px 15px 6px 0;
 	}
 }
+
+
+/* .button-exit {
+	position: absolute;
+	top: 25px;
+	right: 75px;
+	width: 30px;
+	height: 30px;
+	padding: 0 0 0 0;
+	background-color: #ffffff;
+	background-image: url(../../images/button_exit.svg);
+	border: none;
+}
+
+@media screen and (max-width: 350px) {
+	.button-exit {
+		top: 4px;
+		right: 10px;
+	}
+} */
+
+/* .button-exit {
+  top: 25px;
+	right: 75px;
+	width: 30px;
+	height: 30px;
+	padding: 0 0 0 0;
+	background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.button-exit:before,
+.button-exit:after {
+  background:#252525;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.button-exit:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.button-exit:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+} */
