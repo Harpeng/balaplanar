@@ -4,73 +4,35 @@
 
 @media screen and (max-width: 1024px) {
 	.header__menu {
+		position: absolute;
+		top: 50px;
+		right: 50px;
 		display: block;
 		width: 30px;
 		height: 30px;
-		margin: 25px 75px 25px 0;
 		padding: 0 0 0 0;
 		background-color: #ffffff;
-		background-image: url(../../../images/menu.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
 		border: none;
 		cursor: pointer;
-		transition: all 0.3s ease-in-out;
+		transform: translate(-50%, -50%);
 	}
 }
 
-@media screen and (max-width: 750px) {
-	.header__menu {
-		margin: 6px 15px 6px 0;
-	}
+.header__menu::before,
+.header__menu::after {
+	display: block;
+	height: 3px;
+	margin: 7px 0;
+	background: #252525;
+	border-radius: 3px;
+	transition: 0.5s;
+	content: '';
 }
 
-
-/* .button-exit {
-	position: absolute;
-	top: 25px;
-	right: 75px;
-	width: 30px;
-	height: 30px;
-	padding: 0 0 0 0;
-	background-color: #ffffff;
-	background-image: url(../../images/button_exit.svg);
-	border: none;
+.header__menu:hover::before {
+	transform: translateY(7px) rotate(135deg);
 }
 
-@media screen and (max-width: 350px) {
-	.button-exit {
-		top: 4px;
-		right: 10px;
-	}
-} */
-
-/* .button-exit {
-  top: 25px;
-	right: 75px;
-	width: 30px;
-	height: 30px;
-	padding: 0 0 0 0;
-	background-color: #ffffff;
-  transform: translate(-50%, -50%);
-  position: absolute;
+.header__menu:hover::after {
+	transform: translateY(-7px) rotate(-135deg);
 }
-
-.button-exit:before,
-.button-exit:after {
-  background:#252525;
-  content: "";
-  display: block;
-  height: 6px;
-  border-radius: 3px;
-  margin: 7px 0;
-  transition: 0.5s;
-}
-
-.button-exit:hover:before {
-  transform: translateY(12px) rotate(135deg);
-}
-.button-exit:hover:after {
-  transform: translateY(-12px) rotate(-135deg);
-} */
