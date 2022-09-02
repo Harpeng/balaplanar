@@ -11,12 +11,6 @@
 	border-radius: 66px;
 }
 
-@media screen and (max-height: 1000px) {
-	.principles__background {
-		height: auto;
-	}
-}
-
 @media screen and (max-width: 1024px) {
 	.principles__background {
 		height: auto;
