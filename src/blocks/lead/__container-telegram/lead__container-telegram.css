@@ -7,6 +7,13 @@
 	max-width: 1200px;
 }
 
+
+@media screen and (max-width: 1024px) {
+	.lead__container-telegram {
+		flex-basis: 340px;
+	}
+}
+
 @media screen and (max-width: 750px) {
 	.lead__container-telegram {
 		flex-basis: 273px;

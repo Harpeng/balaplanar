@@ -1,9 +1,0 @@
-.popup__btn-partner {
-	text-decoration: none;
-}
-
-@media screen and (max-width: 350px) {
-	.popup__btn-partner {
-		align-self: flex-start;
-	}
-}
