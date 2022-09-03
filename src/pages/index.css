@@ -22,6 +22,8 @@
 @import url(../blocks/header/__scroll-button/header__scroll-button.css);
 @import url(../blocks/header/__mobile-button/header__mobile-button.css);
 @import url(../blocks/header/__button/header__button.css);
+@import url(../blocks/header/__list/header__list.css);
+@import url(../blocks/header/_active/header__menu_active.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_theme/button_theme_black.css);
 @import url(../blocks/lead/lead.css);
