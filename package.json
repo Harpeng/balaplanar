@@ -9,6 +9,7 @@
 		"clean-webpack-plugin": "^4.0.0",
 		"css-loader": "^6.7.1",
 		"cssnano": "^5.1.12",
+		"gh-pages": "^4.0.0",
 		"html-loader": "^3.1.2",
 		"html-webpack-plugin": "^5.5.0",
 		"husky": "7.0.4",
@@ -30,7 +31,9 @@
 		"stylelint:fixed": "stylelint \"src/**/*.css\" --fix",
 		"test": "npm run editorconfig && npm run stylelint",
 		"prepare": "husky install",
-		"staged": "lint-staged"
+		"staged": "lint-staged",
+		"predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
 	},
 	"editorconfig-cli": [
 		"*.json",
